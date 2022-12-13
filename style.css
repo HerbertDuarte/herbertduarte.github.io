@@ -91,6 +91,7 @@ header{
   justify-content: space-between;
   align-items: center;
   background-color: #2c2c2c;
+
 }
 
 #nav-list{
@@ -98,6 +99,9 @@ header{
   align-items: center;
   list-style: none;
   gap: 2.5vw;
+}
+#inicio{
+  color: var(--color02);
 }
 #x{
   display: none;
@@ -140,7 +144,7 @@ header{
 }
 
 #nav-list.active{
-  transform: translateX(-14px);
+  transform: translateX(0px);
 }
 #nav-list.active li{
   opacity: 1;
@@ -159,9 +163,9 @@ header{
 
 section{
   transform: translateY(-10vh);
-  height: calc(100vh - 40px);
+  height: calc(100vh - 60px);
   max-width: 800px;
-  position: relative;
+  width: calc(100vw - 80px);
   padding: 70px 25px 0 25px;
   animation: fade .7s ease-in;
   animation-fill-mode: forwards;
@@ -188,7 +192,8 @@ p{
   line-height: 25px;
 }
 
-p > a{
+p > a,
+p > span{
   color: var(--color02);
   text-decoration: none;
 }
@@ -200,9 +205,6 @@ p > a:hover{
 
 /* Tela de início */
 
-#TextBox-1{
-  padding-bottom: 100px;
-}
 
 #tela-1 p {
   padding: 30px 0;
@@ -211,20 +213,29 @@ p > a:hover{
 h2 > span{
   color: var(--color02);
 }
+.minha-div{
+  max-height: 320px;
+  max-width: 320px;
+}
 .div-perfil{
   width: 100%;
+  max-width: 400px;
 }
 #minha-imagem{
   text-align: center;
   transform: translateY(0);
-  max-width: 260px;
-  min-width: 200px;
+  width: 90%;
   background-color: var(--color02);
   flex-direction: column;
   border-radius: 50% 50% 50% 5%;
-  margin: 20px 0;
+  margin: 20px 10px;
   animation: float 5s linear infinite;
 }
+
+#tela-3{
+  max-width: 800px;
+}
+
 
 /* Medias querry */
 
@@ -234,7 +245,9 @@ h2 > span{
     right: 0;
     top: 60px;
     z-index: 4;
-    background-color: #FFD921;
+    background-color: var(--color01);
+    border: 1px solid var(--color02);
+    border-top: none;
     
     flex-direction: column;
     height:300px;
@@ -253,7 +266,6 @@ h2 > span{
 
   #mobile-menu{
     display: flex;
-    margin-right: 12vw;
   }
 
   #icone-menu{
@@ -268,10 +280,10 @@ h2 > span{
 }
 @media (max-width:500px) {
   #mobile-menu{
-    margin-right: 60px;
+    margin-right: 55px;
   } 
 }
-@media (max-width:320px){
+@media (max-width:570px){
   h2{
     font-size: 1.7em;
     margin:10px 0;
