@@ -7,7 +7,7 @@ function getDistanceFromTheTop(element){
 
 function scrollToSection(event){
     event.preventDefault()
-    const distanceFromTheTop = getDistanceFromTheTop(event.target) + 30
+    const distanceFromTheTop = getDistanceFromTheTop(event.target) - 20
     smoothScrollTo(0, distanceFromTheTop, 400)
     }
     

@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DotGothic16&display=swap');
 
 :root{
+  --color00: #828282;
   --color01: #2c2c2c;
   --color02: #FFD921;
   --color03: #FFE151;
@@ -141,6 +142,7 @@ header{
   justify-content: start;
   width: .7em;
   height: 1em;
+  margin-right:10vw;
 }
 
 #nav-list.active{
@@ -181,15 +183,14 @@ h2{
 
 .centralizar{
   display: flex; 
-  justify-content: center;
+  justify-content: baseline;
   align-items: center;
   flex-direction: column;
 }
 
 p{
-  text-align: justify;
-  font-size: 1.1em;
-  line-height: 25px;
+  font-size: 1.3em;
+  line-height: 27px;
 }
 
 p > a,
@@ -205,7 +206,9 @@ p > a:hover{
 
 /* Tela de início */
 
-
+#tela-1{
+  margin-top: 20px;
+}
 #tela-1 p {
   padding: 30px 0;
 }
@@ -232,10 +235,70 @@ h2 > span{
   animation: float 5s linear infinite;
 }
 
+/* Habilidades */
+
 #tela-3{
   max-width: 800px;
+  align-items: flex-start;
 }
 
+#cursos h3,
+#conhecimentos h3{
+  margin: 20px 0;
+  font-size: 1.7em;
+}
+h3 i{
+  color: var(--color02);
+}
+#cursos{
+  min-width: 100%;
+}
+
+.TituloCursos{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 600px;
+}
+
+.percentual{
+  color: var(--color02);
+}
+
+.barra{
+  max-width: 600px;
+  height: 5px;
+  background-color: var(--color00);
+  margin-bottom: 15px;
+}
+
+.concluido,
+#c10,
+#c70,
+#c30{
+  background-color: var(--color02);
+  height: 5px;
+}
+
+.concluido{
+  width: 100%;
+}
+#c10{
+  width: 10%;
+}
+#c70{
+  width: 70%;
+}
+#c30{
+  width: 30%;
+}
+article{
+  width: 100%;
+}
+article > div > span{
+  display:block;
+}
 
 /* Medias querry */
 

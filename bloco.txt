@@ -1,5 +1,7 @@
 ROTEIRO DO SITE
 
+dark mode icon : <i class="fa-solid fa-circle-half-stroke"></i>
+
 INICIO
 
 [TITULO] Olá, eu me chamo Herbert. Seja bem vindo(a) à minha página de portifólio.
@@ -14,11 +16,13 @@ Eu me chamo Herbert, sou baiano, tenho 20 anos e resído atualmente no municípi
 
 Cursos:
 
-python - 30%
 html e css 1 - 100%
 html e css 2 - 100%
+C básico - 100%
 html e css 3 - 10%
 javascript ECMAScript- 70%
+python - 30%
+
 
 Conhecimentos:
 
@@ -29,9 +33,18 @@ Pacote Office avançado
 hardware intermediário
 
 
+<div id="conhecimentos">
+        <h3><i class="fa-solid fa-brain"></i> Conhecimentos :</h3>
 
+        <ul>
+          <li>Inglês básico</li>
+          <li>Photoshop intermediário</li>
+          <li>Vegas Pro intermediário</li>
+          <li>Pacote Office avançado</li>
+          <li>hardware intermediário</li>
+        </ul>
 
-
+      </div>
 
 
 
