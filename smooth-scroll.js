@@ -1,4 +1,4 @@
-const menulinks = document.querySelectorAll('#menu a')
+const menulinks = document.querySelectorAll('a.nav-btn')
 
 function getDistanceFromTheTop(element){
     const id = element.getAttribute('href')
@@ -7,7 +7,7 @@ function getDistanceFromTheTop(element){
 
 function scrollToSection(event){
     event.preventDefault()
-    const distanceFromTheTop = getDistanceFromTheTop(event.target) - 20
+    const distanceFromTheTop = getDistanceFromTheTop(event.target)
     smoothScrollTo(0, distanceFromTheTop, 400)
     }
     

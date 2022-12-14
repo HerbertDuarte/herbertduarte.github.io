@@ -7,6 +7,7 @@
   --color01: #2c2c2c;
   --color02: #FFD921;
   --color03: #FFE151;
+  --color04: #ffffff;
 }
 
 
@@ -71,9 +72,13 @@
 }
 
 body{
+  scroll-behavior: smooth;
+}
+
+body{
   background-color: var(--color01);
   font-family: 'Chakra Petch', sans-serif;
-  color: white;
+  color: var(--color04);
   height: 100vh;
   width: 100%;
   margin: 0;
@@ -91,7 +96,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2c2c2c;
+  background-color: var(--color01);
 
 }
 
@@ -112,7 +117,7 @@ header{
 }
 #sandwich{
   position: absolute;
-  color: #ffffff;
+  color: var(--color04);
 }
 
 .logo i{
@@ -120,11 +125,11 @@ header{
   font-size: 1.2em;
 }
 .logo i:hover{
-  color: white;
+  color: var(--color04);
 }
 .nav-items, .logo{
   text-decoration: none;
-  color: #ffffff;
+  color: var(--color04);
   font-weight: 400;
   font-size: 1.1em;
 }
@@ -177,7 +182,7 @@ h2{
   margin: 30px 0;
   padding-left: 10px;
   font-size: 2em;
-  border-left: #FFD921 3px solid;
+  border-left: var(--color02) 3px solid;
   max-width: 420px;
 }
 
@@ -208,6 +213,7 @@ p > a:hover{
 
 #tela-1{
   margin-top: 20px;
+  position: relative;
 }
 #tela-1 p {
   padding: 30px 0;
@@ -235,23 +241,46 @@ h2 > span{
   animation: float 5s linear infinite;
 }
 
+#seta-para-baixo i{
+  font-size: 2.7em;
+  color: var(--color02);
+  animation: float 1.5s linear infinite;
+  position: absolute;
+  bottom: 70px;
+  left: 47%;
+}
+
 /* Habilidades */
 
 #tela-3{
   max-width: 800px;
-  align-items: flex-start;
+  align-items: start;
 }
-
-#cursos h3,
-#conhecimentos h3{
+#tela-3 h3{
+  text-align: start;
+  width: 100%;
   margin: 20px 0;
   font-size: 1.7em;
+  cursor: pointer;
+  max-width: 400px;
+  padding: 0 10px;
+}
+
+.cont-hab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 h3 i{
   color: var(--color02);
 }
-#cursos{
-  min-width: 100%;
+#cursos,
+#conhecimentos{
+  width: 100%;
+  min-width: 240px;
+  padding: 0 20px;
+  margin: -10px;
 }
 
 .TituloCursos{
@@ -259,15 +288,19 @@ h3 i{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  max-width: 600px;
+  max-width: 400px;
 }
 
 .percentual{
   color: var(--color02);
 }
 
+.cursoName{
+  color: var(--color00);
+}
+
 .barra{
-  max-width: 600px;
+  max-width: 400px;
   height: 5px;
   background-color: var(--color00);
   margin-bottom: 15px;
@@ -276,7 +309,9 @@ h3 i{
 .concluido,
 #c10,
 #c70,
-#c30{
+#c30,
+#c50,
+#c90{
   background-color: var(--color02);
   height: 5px;
 }
@@ -290,15 +325,35 @@ h3 i{
 #c70{
   width: 70%;
 }
+#c50{
+  width: 50%;
+}
 #c30{
   width: 30%;
 }
+#c90{
+  width: 90%;
+}
 article{
   width: 100%;
+  overflow: hidden;
+  height: 100%;
+  margin: auto;
 }
+
 article > div > span{
   display:block;
 }
+
+#container-habilidades{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
 
 /* Medias querry */
 
@@ -321,7 +376,7 @@ article > div > span{
     transition: transform .3s ease-in;
   }
   .nav-items{
-    color: var(--color01);
+    color:var(--color04);
   }
   #nav-list li{
     opacity: 0;
@@ -336,7 +391,7 @@ article > div > span{
   }
 
   .nav-items:hover{
-    color: white;
+    color: var(--color04);
     text-shadow: 1px 1px 5px #0000005c;
   }
   
@@ -345,6 +400,25 @@ article > div > span{
   #mobile-menu{
     margin-right: 55px;
   } 
+}
+
+@media (max-width:730px){
+  #container-habilidades{
+    flex-direction: column;
+    width: 100%;
+  }
+  .barra, .TituloCursos, #cursos, #conhecimentos{
+    width: 100%;
+    max-width: 400px;
+  }
+  #cursos,
+  #conhecimentos{
+    width: 100%;
+    min-width: 240px;
+  }
+  #minha-imagem{
+    width: 250px;
+  }
 }
 @media (max-width:570px){
   h2{

@@ -11,7 +11,7 @@
 </head>
 <body>
   <header id="menu">
-      <a href="#tela-1" class="logo" id="icone-menu">
+      <a href="#tela-1" class="logo nav-btn" id="icone-menu">
         <i href="#tela-1" class="fa-solid fa-code"></i>
       </a>
       <span id="mobile-menu">
@@ -20,11 +20,11 @@
       </span>
 
         <ul id="nav-list">
-          <li><a id="inicio" class="nav-items" href="#tela-1">Início</a></li>
-          <li><a id="sobre" class="nav-items" href="#tela-2">Sobre mim</a></li>
-          <li><a id="habilidades" class="nav-items" href="#tela-3">Habilidades</a></li>
-          <li><a id="projetos" class="nav-items" href="#tela-4">Projetos</a></li>
-          <li><a id="contatos" class="nav-items" href="#tela-5">Contatos</a></li>
+          <li><a id="inicio" class="nav-items nav-btn" href="#tela-1">Início</a></li>
+          <li><a id="sobre" class="nav-items nav-btn" href="#tela-2">Sobre mim</a></li>
+          <li><a id="habilidades" class="nav-items nav-btn" href="#tela-3">Habilidades</a></li>
+          <li><a id="projetos" class="nav-items nav-btn" href="#tela-4">Projetos</a></li>
+          <li><a id="contatos" class="nav-items nav-btn" href="#tela-5">Contatos</a></li>
         </ul>
   </header>
 
@@ -36,6 +36,10 @@
           <h2>Olá, eu me chamo <span>Herbert</span>. Seja bem vindo(a) à minha página de portifólio.</h2>
           <p>Esse site foi desenvolvido por mim como uma forma de compartilhar meu trabalho, minhas experiências, minhas habilidades e um pouco sobre mim. Aqui você também encontrará minhas redes sociais, cursos concluídos e meus repositórios.</p>
         </div>
+
+        <a href="#tela-2" id="seta-para-baixo" class="nav-btn">
+          <i href="#tela-2" class="fa-solid fa-angles-down"></i>
+        </a>
 
     </section>
 
@@ -57,36 +61,49 @@
       
     </section>
   
-    <section class="centralizar" id="tela-3">
+    <section  id="tela-3">
       <h2>Habilidades</h2>
 
-      <div id="cursos">
-        <h3><i class="fa-solid fa-graduation-cap"></i> Cursos :</h3>
+      <div id="container-habilidades">
+        <div class="cont-hab" id="cursos">
 
-        <article>
-          <div class="TituloCursos"><span class="crs">HTML5 e CSS3 1</span> <span class="percentual">100%</span></div>
-          <div class="barra"><span class="concluido"></span></div>
- 
-          <div class="TituloCursos"><span class="crs">HTML5 e CSS3 2</span> <span class="percentual">100%</span></div>
-          <div class="barra"><span class="concluido"></span></div>
+          <h3 id="label-cursos"><i class="fa-solid fa-graduation-cap"></i> Cursos</h3>
+          <article id="cursosArt">
+            <div class="TituloCursos"><span class="crs">HTML5</span> <span class="cursoName">Curso em Vídeo</span> <span class="percentual">100%</span></div>
+            <div class="barra"><span class="concluido"></span></div>
+            <div class="TituloCursos"><span class="crs">CSS3</span> <span class="cursoName">Curso em Vídeo</span> <span class="percentual">100%</span></div>
+            <div class="barra"><span class="concluido"></span></div>
+        
+            <div class="TituloCursos"><span class="crs">JavaScript</span> <span class="cursoName">Curso em Vídeo</span> <span class="percentual">70%</span></div>
+            <div class="barra"><span id="c70"></span> <span id="f30"></span></div>
+        
+            <div class="TituloCursos"><span class="crs">Python</span> <span class="cursoName">Curso em Vídeo</span> <span class="percentual">30%</span></div>
+            <div class="barra"><span id="c30"></span> <span id="f70"></span></div>
+            <div class="TituloCursos"><span class="crs">C</span> <span class="cursoName">IFBA</span> <span class="percentual">10%</span></div>
+            <div class="barra"> <span id="c10"></span> <span id="f90"></div>
+          </article>
+        </div>
+        <div class="cont-hab" id="conhecimentos">
 
-          <div class="TituloCursos"><span class="crs">HTML5 e CSS3 3</span> <span class="percentual">10%</span></div>
-          <div class="barra"><span id="c10"></span> <span id="f90"></span></div>
+          <h3 id="label-conhecimentos"><i class="fa-solid fa-brain"></i> Conhecimentos </h3>
+          <article id="conheArt">
+            <div class="TituloCursos"><span class="crs">Pacote Office</span> <span class="percentual">Avançado</span></div>
+            <div class="barra"><span id="c90"></span></div>
+            
+            <div class="TituloCursos"><span class="crs">Vegas Pro</span> <span class="percentual">Intermediário</span></div>
+            <div class="barra"><span id="c50"></span> </div>
+            
+            <div class="TituloCursos"><span class="crs">Hardware</span> <span class="percentual">intermediário</span></div>
+            <div class="barra"> <span id="c50"></span></div>
 
-          <div class="TituloCursos"><span class="crs">C básico</span> <span class="percentual">100%</span></div>
-          <div class="barra"><span class="concluido"></span></div>
+            <div class="TituloCursos"><span class="crs">PhotoShop</span> <span class="percentual">Básico</span></div>
+            <div class="barra"> <span id="c10"></span></div>
 
-          <div class="TituloCursos"><span class="crs">JavaScript ECMAScript</span> <span class="percentual">70%</span></div>
-          <div class="barra"><span id="c70"></span> <span id="f30"></span></div>
-
-          <div class="TituloCursos"><span class="crs">Python</span> <span class="percentual">30%</span></div>
-          <div class="barra"><span id="c30"></span> <span id="f70"></span></div>
-        </article>
-
+            <div class="TituloCursos"><span class="crs">Inglês</span> <span class="percentual">Básico</span></div>
+            <div class="barra"> <span id="c10"></span></div>
+            </article>
+        </div>
       </div>
-
-
-      
       
     </section>
 
