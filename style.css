@@ -6,7 +6,7 @@
   --color00: #828282;
   --color01: #2c2c2c;
   --color02: #FFD921;
-  --color03: #FFE151;
+  --color03: #ffe354;
   --color04: #ffffff;
 }
 
@@ -265,6 +265,14 @@ h2 > span{
   max-width: 400px;
   padding: 0 10px;
 }
+#container-habilidades{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+
+}
 
 .cont-hab{
   display: flex;
@@ -301,9 +309,9 @@ h3 i{
 
 .barra{
   max-width: 400px;
-  height: 5px;
+  height: 10px;
   background-color: var(--color00);
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .concluido,
@@ -313,7 +321,7 @@ h3 i{
 #c50,
 #c90{
   background-color: var(--color02);
-  height: 5px;
+  height: 10px;
 }
 
 .concluido{
@@ -345,16 +353,45 @@ article > div > span{
   display:block;
 }
 
-#container-habilidades{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
 
+/* Projetos */
+#tela-4 h2{
+  margin: 5px 0;
 }
 
+#tela-4 p{
+  padding: 20px 0;
+}
 
+#proj-list{
+  list-style: none;
+}
+
+.fa-link{
+  color: var(--color03);
+}
+
+.proj-item{
+  font-size: 1.2em;
+  border-left: 2px solid var(--color02);
+  padding-left: 5px;
+  margin: 20px 0;
+}
+
+.link-repo{
+  text-decoration: none;
+  color: var(--color04);
+}
+.link-repo:hover{
+  text-decoration: underline;
+  color: var(--color02);
+}
+.link-site i:hover{
+  color: var(--color02);
+}
+#tela-1, #tela-2, #tela-3{
+  display: none;
+}
 /* Medias querry */
 
 @media (max-width:850px) {
@@ -406,6 +443,7 @@ article > div > span{
   #container-habilidades{
     flex-direction: column;
     width: 100%;
+    align-items: center;
   }
   .barra, .TituloCursos, #cursos, #conhecimentos{
     width: 100%;
@@ -419,12 +457,27 @@ article > div > span{
   #minha-imagem{
     width: 250px;
   }
-}
-@media (max-width:570px){
-  h2{
-    font-size: 1.7em;
-    margin:10px 0;
+  .barra{
+    margin-bottom: 11px;
+    height: 5px;
   }
+
+  .concluido,
+  #c10,
+  #c70,
+  #c30,
+  #c50,
+  #c90{
+    background-color: var(--color02);
+    height: 5px;
+    }
+    h2{
+      font-size: 1.7em;
+      margin:10px 0;
+    }
+  }
+@media (max-width:570px){
+
   #minha-imagem{
     display: none;
   }

@@ -32,21 +32,14 @@ Vegas Pro intermediário
 Pacote Office avançado
 hardware intermediário
 
+[TITULO] Projetos
 
-<div id="conhecimentos">
-        <h3><i class="fa-solid fa-brain"></i> Conhecimentos :</h3>
-
-        <ul>
-          <li>Inglês básico</li>
-          <li>Photoshop intermediário</li>
-          <li>Vegas Pro intermediário</li>
-          <li>Pacote Office avançado</li>
-          <li>hardware intermediário</li>
-        </ul>
-
-      </div>
-
-
+Portifolio Maria Beatriz <i class="fa-solid fa-link"></i>
+Nav bar responsiva
+Tela de Login Institucional
+Menu Slider
+Conversor de bases numéricas <i class="fa-solid fa-link"></i>
+Portifólio Pessoal <i class="fa-solid fa-link"></i>
 
 
 
