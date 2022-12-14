@@ -389,9 +389,7 @@ article > div > span{
 .link-site i:hover{
   color: var(--color02);
 }
-#tela-1, #tela-2, #tela-3{
-  display: none;
-}
+
 /* Medias querry */
 
 @media (max-width:850px) {
