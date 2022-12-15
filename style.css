@@ -7,9 +7,23 @@
   --color01: #2c2c2c;
   --color02: #FFD921;
   --color03: #ffe354;
-  --color04: #ffffff;
+  --color04: #ffffff; 
+  --color05: #434343;
 }
 
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: var(--color05);
+}
+
+::-webkit-scrollbar-thumb{
+  width: 10px;
+  background-color: var(--color02);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:active{
+  background-color: var(--color03);
+}
 
 @keyframes rotacao {
   
@@ -395,6 +409,81 @@ article > div > span{
 /* CONTATOS */
 
 .contatos-div{
+  columns: 3;
+  list-style: none;
+  margin-top: 30px;
+}
+.social-link{
+  text-decoration: none;
+  color: var(--color04);
+}
+.socialBox{
+  border: 2px solid var(--color02);
+  padding: 15px 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 180px;
+}
+.socialBox span{
+  font-size: 1.2em;
+}
+.socialBox i{
+  font-size: 1.5em;
+  color: var(--color02);
+}
+.BoxIN{
+  margin-top: 20px;
+}
+#instagram:hover .fa-instagram{
+  color: white;
+}
+#youtube:hover .fa-youtube{
+  color: white;
+}
+#linkedin:hover .fa-linkedin{
+  color: white;
+}
+#twitter:hover .fa-twitter{
+  color: white;
+}
+#email:hover .fa-envelope{
+  color: white;
+}
+#github:hover .fa-github{
+  color: white;
+}
+#instagram:hover{
+  color:white ;
+  background-image:linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border: solid 2px #cc2366;
+}
+#linkedin:hover{
+  color:white ;
+  background-color: #0e76a8;
+  border: solid 2px #0e76a8;
+}
+#github:hover{
+  color:white ;
+  background-color: rgb(13, 13, 13);
+  border: solid 2px rgb(14, 14, 14);
+}
+#twitter:hover{
+  color: white;
+  background-color: #1DA1F2;
+  border: solid 2px #1DA1F2;
+}
+#youtube:hover{
+  color: white;
+  background-color:#FF0000;
+  border: solid 2px #FF0000;
+}
+#email:hover{
+  color: white;
+  background-color: #267eb4;
+  border: solid 2px #267eb4;
+}
+/* .contatos-div{
   margin-top: 20px;
   columns: 3;
   list-style: none;
@@ -427,7 +516,7 @@ article > div > span{
 .socialBox i{
   font-size: 30px;
   color: var(--color02);
-}
+} */
 
 /* Medias querry */
 
@@ -446,34 +535,28 @@ article > div > span{
     width: 30vw;
     min-width: 150px;
     justify-content: space-around;
-    transform: translateX(101%);
+    transform: translateX(104%);
     transition: transform .3s ease-in;
   }
   
   #nav-list li{
     opacity: 0;
   }
-
+  
   #mobile-menu{
     display: flex;
   }
-
+  
   #icone-menu{
-  margin-left: 10vw;
+    margin-left: 10vw;
   }
-
+  
   .nav-items:hover{
     color: var(--color04);
     text-shadow: 1px 1px 5px #0000005c;
   }
   
 }
-@media (max-width:500px) {
-  #mobile-menu{
-    margin-right: 55px;
-  } 
-}
-
 @media (max-width:730px){
   #container-habilidades{
     flex-direction: column;
@@ -496,13 +579,7 @@ article > div > span{
     margin-bottom: 11px;
     height: 5px;
   }
-
-  .concluido,
-  #c10,
-  #c70,
-  #c30,
-  #c50,
-  #c90{
+  .concluido,#c10,#c70,#c30,#c50,#c90{
     background-color: var(--color02);
     height: 5px;
     }
@@ -510,38 +587,59 @@ article > div > span{
       font-size: 1.7em;
       margin:10px 0;
     }
-
     #tela-2 h2{
       margin: 30px 0;
     }
-
-    .contatos-div{
-      display: block;
-      columns: 2;
-    }
-    .socialBox{
-      margin: 10px;
-    }
-    .nav-items{
-      color:var(--color04);
-    }
   }
 @media (max-width:570px){
-
-  #minha-imagem{
+    #minha-imagem{
+      display: none;
+    }
+    .contatos-div{
+      columns: 2;
+    }
+    .BoxIN{
+      margin: 0;
+    }
+    .BoxIN2{
+      margin-top: 15px;
+    }
+  }
+@media (max-width:500px) {
+  #mobile-menu{
+    margin-right: 55px;
+  } 
+}
+ @media (max-height:620px){
+  #seta-para-baixo{
     display: none;
   }
 }
-@media (max-width:390px){
-  section{
-    width: calc(100vw - 50px);
-  }
-}
+
 @media (max-width:360px){
   section{
     width: calc(100vw - 40px);
   }
+  #tela-4{
+    margin-top: 20px;
+  }
+  #tela-4 h2{
+    margin: 45px 0 10px 0;
+  }
+  .socialBox{
+    padding: 5px;
+  }
+  #tela-4 p{
+    padding: 3px 0;
+  }
 }
+
+/* @media (max-width:390px){
+  section{
+    width: calc(100vw - 50px);
+  }
+}
+
 @media (max-width:345px){
   section{
     width: calc(100vw - 30px);
@@ -552,7 +650,6 @@ article > div > span{
   .socialBox{
     padding: 10px 0;
     margin: 5px 2.5px;
-    min-width: none;
     justify-content: center;
   }
   .contatos-div{
@@ -562,4 +659,4 @@ article > div > span{
   .contact-item{
     transform: translateX(-0px);
   }
-}
+} */
