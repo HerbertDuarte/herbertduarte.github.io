@@ -138,9 +138,7 @@ header{
   color: var(--color02);
   font-size: 1.2em;
 }
-.logo i:hover{
-  color: var(--color04);
-}
+
 .nav-items, .logo{
   text-decoration: none;
   color: var(--color04);
@@ -148,9 +146,6 @@ header{
   font-size: 1.1em;
 }
 
-.nav-items:hover{
-  color: var(--color02);
-}
 
 #mobile-menu{
   color: var(--color01);
@@ -424,6 +419,7 @@ article > div > span{
   display: flex;
   justify-content: space-between;
   max-width: 180px;
+  transition: all .5s;
 }
 .socialBox span{
   font-size: 1.2em;
