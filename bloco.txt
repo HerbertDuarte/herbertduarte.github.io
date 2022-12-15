@@ -29,6 +29,7 @@ Conhecimentos:
 Inglês básico
 Photoshop intermediário
 Vegas Pro intermediário
+Git e GitHub intermediário
 Pacote Office avançado
 hardware intermediário
 
@@ -40,6 +41,15 @@ Tela de Login Institucional
 Menu Slider
 Conversor de bases numéricas <i class="fa-solid fa-link"></i>
 Portifólio Pessoal <i class="fa-solid fa-link"></i>
+
+[TITULO] Contatos
+
+Instagram
+LinkedIn
+Twitter de DEV
+youtube de DEV
+GitHub
+Email
 
 
 

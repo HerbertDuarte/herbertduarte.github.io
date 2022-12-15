@@ -186,6 +186,9 @@ h2{
   max-width: 420px;
 }
 
+p > i{
+  color: var(--color02);
+}
 .centralizar{
   display: flex; 
   justify-content: baseline;
@@ -222,23 +225,22 @@ p > a:hover{
 h2 > span{
   color: var(--color02);
 }
+
 .minha-div{
   max-height: 320px;
-  max-width: 320px;
-}
-.div-perfil{
-  width: 100%;
-  max-width: 400px;
-}
-#minha-imagem{
+  max-width: 800px;
   text-align: center;
+}
+
+#minha-imagem{
   transform: translateY(0);
-  width: 90%;
+  width: 100%;
   background-color: var(--color02);
-  flex-direction: column;
   border-radius: 50% 50% 50% 5%;
-  margin: 20px 10px;
+  margin: 20px auto;
   animation: float 5s linear infinite;
+  max-height: 320px;
+  max-width: 320px;
 }
 
 #seta-para-baixo i{
@@ -246,7 +248,7 @@ h2 > span{
   color: var(--color02);
   animation: float 1.5s linear infinite;
   position: absolute;
-  bottom: 70px;
+  bottom: 10vh;
   left: 47%;
 }
 
@@ -353,8 +355,8 @@ article > div > span{
   display:block;
 }
 
-
 /* Projetos */
+
 #tela-4 h2{
   margin: 5px 0;
 }
@@ -387,6 +389,29 @@ article > div > span{
   color: var(--color02);
 }
 .link-site i:hover{
+  color: var(--color02);
+}
+
+section:not(#tela-5){
+  display: none;
+}
+
+/* CONTATOS */
+
+.socialBox{
+  padding: 10px 10px;
+  border: 2px solid var(--color04);
+  border-radius: 4px;
+  min-width: 200px;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color04);
+}
+.socialBox i{
+  font-size: 30px;
   color: var(--color02);
 }
 
@@ -472,6 +497,10 @@ article > div > span{
     h2{
       font-size: 1.7em;
       margin:10px 0;
+    }
+
+    #tela-2 h2{
+      margin: 30px 0;
     }
   }
 @media (max-width:570px){
