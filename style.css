@@ -257,7 +257,7 @@ h2 > span{
   color: var(--color02);
   animation: float 1.5s linear infinite;
   position: absolute;
-  bottom: 10vh;
+  bottom: 17vh;
   left: 47%;
 }
 
@@ -397,8 +397,11 @@ article > div > span{
   text-decoration: underline;
   color: var(--color02);
 }
-.link-site i:hover{
+.link-site i{
   color: var(--color02);
+}
+.link-site i:hover{
+  color: var(--color04);
 }
 
 /* CONTATOS */
@@ -444,7 +447,7 @@ article > div > span{
   color: white;
 }
 #email:hover .fa-envelope{
-  color: white;
+  color: var(--color01);
 }
 #github:hover .fa-github{
   color: white;
@@ -475,44 +478,81 @@ article > div > span{
   border: solid 2px #FF0000;
 }
 #email:hover{
-  color: white;
-  background-color: #267eb4;
-  border: solid 2px #267eb4;
+  color: var(--color01);
+  background-color: var(--color02);
+  border: solid 2px var(--color02);
 }
-/* .contatos-div{
+
+/* formulario de email */
+
+form{
+  margin-top: 30px;
+}
+#formulario{
+  height: 80vh;
+  width: calc(100vw - 60px);
+  overflow-y: hidden;
+}
+#formulario label{
+  font-size: 1.1em;
+  margin-left: 5px;
+}
+.e-mail{
+  display: flex;
+  flex-direction: column;
+}
+.mensagem{
   margin-top: 20px;
-  columns: 3;
-  list-style: none;
-  min-width: 308px;
 }
-
-.contact-item{
-  transform: translateX(-13px);
-}
-
-.socialBox{
-  padding: 10px 10px;
+.e-mail input{
+  height: 30px;
+  width: 100%;
   border: 2px solid var(--color02);
   border-radius: 4px;
-  min-width: 130px;
-  width: 90%;
-  max-width: 500px;
-  margin: 10px auto;
-  display: inline-flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  color: var(--color04);
-  
+  background-color: var(--color01);
+  color: white;
+  font-size: 1.1em;
+  outline: 0;
+  text-indent: 10px;
+  font-family: 'Chakra Petch', sans-serif;
+
 }
-.social-link{
-  text-decoration: none;
+.mensagem textarea{
+  width: 100%;
+  border: 2px solid var(--color02);
+  border-radius: 4px;
+  background-color: var(--color01);
+  color: white;
+  font-size: 1.1em;
+  outline: 0;
+  text-indent: 10px;
+  font-family: 'Chakra Petch', sans-serif;
+}
+#formulario button{
+  font-size: 1.1em;
+  font-weight: 600;
+  border-radius: 3px;
+  background-color: var(--color02);
+  color: var(--color01);
+  height: 30px;
+  padding: 0 10px;
+  border: none;
+  outline: 0;
+  border: 2px solid var(--color02);
+  font-family: 'Chakra Petch', sans-serif;
+  margin: 10px 0;
+  cursor: pointer;
+}
+#formulario button:hover{
+  background-color: var(--color03);
 }
 
-.socialBox i{
-  font-size: 30px;
+/* thanks */
+
+.iconem{
+  font-size: 3em;
   color: var(--color02);
-} */
+}
 
 /* Medias querry */
 
@@ -628,8 +668,16 @@ article > div > span{
   #tela-4 p{
     padding: 3px 0;
   }
+  #tela-5 h2{
+    margin: 50px 0 20px 0;
+  }
+  #tela-5{
+    padding-bottom: 50px;
+  }
+  #seta-para-baixo{
+    display: none;
+  }  
 }
-
 /* @media (max-width:390px){
   section{
     width: calc(100vw - 50px);

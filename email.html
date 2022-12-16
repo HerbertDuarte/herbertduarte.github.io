@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de email</title>
+  <script src="https://kit.fontawesome.com/bb9ff7a12b.js" crossorigin="anonymous"></script>
+<script defer src="smooth-scroll.js"></script>
+  <script defer src="mobile-navbar.js"></script>
+  <script defer src="app.js"></script>
+  <script defer src="indicador-scroll.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="centralizar">
+  <section class="centralizar" id=formulario>
+    <h2>Formulário de Email</h2>
+    <form action="https://formsubmit.co/herbertduarte.dev@gmail.com" method="POST">
+      <div class="div-email e-mail">
+        <label for="email">Email</label>
+        <input placeholder="Insira seu email" type="email" name="email" required>
+      </div>
+      <div class="div-email mensagem">
+        <label for="name">Mensagem</label>
+        <textarea name="name" cols="30" rows="7" required></textarea>
+      </div>
+      <button id="botao-enviar" type="submit">Enviar</button>
+      <input type="hidden" name="_next" value="thanks.html">
+    </form>
+  </section>
+</body>
+</html>
