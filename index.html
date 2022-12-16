@@ -5,13 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/bb9ff7a12b.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="scripts/style.css">
   <link rel="shortcut icon" href="images/icon-white.png" type="image/x-icon">
   <title>Portifólio - Herbert Duarte</title>
-  <script defer src="smooth-scroll.js"></script>
-  <script defer src="mobile-navbar.js"></script>
-  <script defer src="app.js"></script>
-  <script defer src="indicador-scroll.js"></script>
+  <script defer src="scripts/smooth-scroll.js"></script>
+  <script defer src="scripts/mobile-navbar.js"></script>
+  <script defer src="scripts/app.js"></script>
+  <script defer src="scripts/indicador-scroll.js"></script>
+  <script defer src="scripts/slides.js"></script>
 </head>
 <body>
   <header id="menu">
@@ -114,19 +115,60 @@
       <div class="projetos-div">
         <h2>Projetos</h2>
         <p><i class="fa-solid fa-laptop-file"></i> Acesse meus repositórios de projetos no <a href="https://github.com/HerbertDuarte">GitHub</a> e o link de alguns deles já hospedados:</p>
-        
-        <div class="centralizar" id="container-projetos">
-          <ul id="proj-list">
-            <li class="proj-item"><a href="https://github.com/HerbertDuarte/portbia"  target="_blank"class="link-repo">Portifolio Maria Beatriz</a> <a href="https://portbia.netlify.app/" target="_blank" class="link-site"><i class="fa-solid fa-link"></i></a></li>
-            <li class="proj-item"><a href="https://github.com/HerbertDuarte/navbar-responsiva" target="_blank" class="link-repo">Nav bar responsiva</a> <a href="https://herbertduarte.github.io/navbar-responsiva/" target="_blank" class="link-site"><i class="fa-solid fa-link"></i></a></li>
-            <li class="proj-item"><a href="https://github.com/HerbertDuarte/Tela-de-login" target="_blank" class="link-repo">Tela de Login Institucional</a> <a href="https://herbertduarte.github.io/Tela-de-login/" target="_blank" class="link-site"><i class="fa-solid fa-link"></i></a></li>
-            <li class="proj-item"><a href="https://github.com/HerbertDuarte/menu-slider" target="_blank" class="link-repo">Menu Slider</a> <a href="https://herbertduarte.github.io/menu-slider/" target="_blank" class="link-site"><i class="fa-solid fa-link"></i></a></li>
-            <li class="proj-item"><a href="https://github.com/HerbertDuarte/conversor-bases-numericas" target="_blank" class="link-repo">Conversor de bases numéricas</a> <a href="https://mlconversor.netlify.app/" target="_blank" class="link-site"><i class="fa-solid fa-link"></i></a></li>
-            <li class="proj-item"><a href="https://github.com/HerbertDuarte/portifolio-herbert" target="_blank" class="link-repo">Portifólio Pessoal</a> <a href="https://herbert-portifolio.netlify.app/" target="_blank" class="link-site"><i class="fa-solid fa-link"></i></a></li>
-            <li class="proj-item"><a href="https://github.com/HerbertDuarte/ExerciciosHTML-CSS" target="_blank" class="link-repo">Exercicios HTML/CSS</a> </li>
-            <li class="proj-item"><a href="https://github.com/HerbertDuarte/Exercicios-JS" target="_blank" class="link-repo">Exercicios JavaScript</a> </li>
-          </ul>
 
+        <div class="centralizar container-projetos">
+          <div id="slider">
+            <div id="slides">
+          
+            <!--Início dos radio buttons-->
+            <input type="radio" name="slide-items" id="radio1" checked>
+            <input type="radio" name="slide-items" id="radio2">
+            <input type="radio" name="slide-items" id="radio3">
+            <input type="radio" name="slide-items" id="radio4">
+            <!--Fim dos radio buttons-->
+            <!--Imagens-->
+            <picture class="first slide">
+              <source media="(max-width: 880px)" srcset="images/slide1-pq.PNG" type="image/png">
+              <img src="images/slide1.PNG" alt="Portifolio Maria Beatriz">
+            </picture>
+            <picture class="slide">
+              <source media="(max-width: 880px)" srcset="images/slide2-pq.PNG" type="image/png">
+              <img src="images/slide2.PNG" alt="Tela de Login Institucional">
+            </picture>
+            <picture class="slide">
+              <source media="(max-width: 880px)" srcset="images/slide3-pq.PNG" type="image/png">
+              <img src="images/slide3.PNG" alt="coversor de bases numericas">
+            </picture>
+            <picture class="slide">
+              <source media="(max-width: 880px)" srcset="images/slide4-pq.PNG" type="image/png">
+              <img src="images/slide4.PNG" alt="Portifolio pessoal">
+            </picture>
+          
+            <!--Fim imagens-->
+          
+            <div id="navigation-manual">
+          
+                <label id="b1" class="manual" for="radio1"></label>
+                <label id="b2" class="manual" for="radio2"></label>
+                <label id="b3" class="manual" for="radio3"></label>
+                <label id="b4" class="manual" for="radio4"></label>
+            </div>
+          
+            </div>
+          </div>
+          
+          <div class="centralizar" id="container-projetos">
+            <ul id="proj-list">
+              <li class="proj-item"><a href="https://github.com/HerbertDuarte/portbia"  target="_blank"class="link-repo">Portifolio Maria Beatriz</a> <a href="https://portbia.netlify.app/" target="_blank" class="link-site"><i class="fa-solid fa-link"></i></a></li>
+              <li class="proj-item"><a href="https://github.com/HerbertDuarte/navbar-responsiva" target="_blank" class="link-repo">Nav bar responsiva</a> <a href="https://herbertduarte.github.io/navbar-responsiva/" target="_blank" class="link-site"><i class="fa-solid fa-link"></i></a></li>
+              <li class="proj-item"><a href="https://github.com/HerbertDuarte/Tela-de-login" target="_blank" class="link-repo">Tela de Login Institucional</a> <a href="https://herbertduarte.github.io/Tela-de-login/" target="_blank" class="link-site"><i class="fa-solid fa-link"></i></a></li>
+              <li class="proj-item"><a href="https://github.com/HerbertDuarte/menu-slider" target="_blank" class="link-repo">Menu Slider</a> <a href="https://herbertduarte.github.io/menu-slider/" target="_blank" class="link-site"><i class="fa-solid fa-link"></i></a></li>
+              <li class="proj-item"><a href="https://github.com/HerbertDuarte/conversor-bases-numericas" target="_blank" class="link-repo">Conversor de bases numéricas</a> <a href="https://mlconversor.netlify.app/" target="_blank" class="link-site"><i class="fa-solid fa-link"></i></a></li>
+              <li class="proj-item"><a href="https://github.com/HerbertDuarte/portifolio-herbert" target="_blank" class="link-repo">Portifólio Pessoal</a> <a href="https://herbert-portifolio.netlify.app/" target="_blank" class="link-site"><i class="fa-solid fa-link"></i></a></li>
+              <li class="proj-item"><a href="https://github.com/HerbertDuarte/ExerciciosHTML-CSS" target="_blank" class="link-repo">Exercicios HTML/CSS</a> </li>
+              <li class="proj-item"><a href="https://github.com/HerbertDuarte/Exercicios-JS" target="_blank" class="link-repo">Exercicios JavaScript</a> </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -161,12 +203,16 @@
             </a>
           </li>
           <li class="contact-item">
-            <a href="email.html" class="social-link">
+            <a href="windows/email.html" class="social-link">
               <div id="email" class="socialBox BoxIN BoxIN2"><span class="socialTitulo">Email</span><i class="fa-solid fa-envelope"></i></div>
             </a>
           </ul>
     </div>
     </section>
+
+    <a href="#tela-1" id="seta-para-cima" class="nav-btn">
+      <i href="#tela-1" class="fa-regular fa-circle-up"></i>
+    </a>
 
   </main>
   

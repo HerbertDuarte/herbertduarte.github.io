@@ -98,6 +98,9 @@ body{
   margin: 0;
   overflow-x: hidden;
 }
+main{
+  position: relative;
+}
 
 /* Barra de navegação */
 
@@ -174,12 +177,17 @@ header{
   display: none;
   transition: display .5s ease;
 }
+.logo span{
+  font-size: 1.3em;
+  color: var(--color02);
+}
 
 /* Configurações do main */
 
 section{
   transform: translateY(-10vh);
   height: calc(100vh - 60px);
+  max-height: 640px;
   max-width: 800px;
   width: calc(100vw - 80px);
   padding: 70px 25px 0 25px;
@@ -224,11 +232,15 @@ p > a:hover{
 /* Tela de início */
 
 #tela-1{
-  margin-top: 20px;
+  padding-top: 50px;
   position: relative;
 }
+
 #tela-1 p {
   padding: 30px 0;
+}
+#TextBox-1{
+  padding-top: 40px;
 }
 
 h2 > span{
@@ -257,7 +269,7 @@ h2 > span{
   color: var(--color02);
   animation: float 1.5s linear infinite;
   position: absolute;
-  bottom: 17vh;
+  bottom: 11vh;
   left: 47%;
 }
 
@@ -367,7 +379,7 @@ article > div > span{
 /* Projetos */
 
 #tela-4 h2{
-  margin: 5px 0;
+  margin: 15px 0 5px 0;
 }
 
 #tela-4 p{
@@ -386,7 +398,7 @@ article > div > span{
   font-size: 1.2em;
   border-left: 2px solid var(--color02);
   padding-left: 5px;
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 .link-repo{
@@ -402,6 +414,111 @@ article > div > span{
 }
 .link-site i:hover{
   color: var(--color04);
+}
+.container-projetos{
+  flex-direction: row ;
+
+}
+
+#slider{
+  margin: 0 auto;
+  height: 310px;
+  max-width: 460px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 3px solid var(--color03);
+
+}
+
+#slides{
+  height: 100%;
+  width: 500%;
+  height: 310px;
+  display: flex;
+}
+
+#slides input{
+  display: none;
+}
+
+.slide{
+  width: 460px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide img{
+  width: 460px;
+  height: 100%;
+}
+
+#navigation-manual{
+  position: absolute;
+  width: 460px;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  align-items: center;
+  margin-top: 320px;
+}
+
+.manual{
+  border: 2px solid var(--color02);
+  height: 10px;
+  width: 10px;
+  cursor: pointer;
+  transition: background-color .2s linear;
+  border-radius: 50%;
+}
+
+.manual:hover{
+  border-color: var(--color02);
+  background-color: var(--color02);
+}
+
+/*Scroller*/
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+
+.first{
+  transition: margin .5s ease-in-out;
+}
+
+/*Indicador de pagina*/
+
+#radio1:checked ~ #navigation-manual #b1{
+  background-color: var(--color02);
+}
+
+#radio2:checked ~ #navigation-manual #b2{
+  background-color: var(--color02);
+}
+
+#radio3:checked ~ #navigation-manual #b3{
+  background-color: var(--color02);
+}
+#radio4:checked ~ #navigation-manual #b4{
+  background-color: var(--color02);
+}
+.manual:hover{
+  border-color: var(--color02);
+  background-color: var(--color02);
 }
 
 /* CONTATOS */
@@ -478,9 +595,19 @@ article > div > span{
   border: solid 2px #FF0000;
 }
 #email:hover{
+  font-weight: 600;
   color: var(--color01);
   background-color: var(--color02);
   border: solid 2px var(--color02);
+}
+
+#seta-para-cima i{
+  font-size: 2.7em;
+  color: var(--color02);
+  position: absolute;
+  bottom: 5vh;
+  right: 20px;
+  font-weight: normal;
 }
 
 /* formulario de email */
@@ -534,8 +661,8 @@ form{
   border-radius: 3px;
   background-color: var(--color02);
   color: var(--color01);
-  height: 30px;
-  padding: 0 10px;
+  height: 40px;
+  padding: 0 20px;
   border: none;
   outline: 0;
   border: 2px solid var(--color02);
@@ -556,6 +683,28 @@ form{
 
 /* Medias querry */
 
+@media (max-width:880px){
+  #slider{
+    height: 310px;
+    max-width: 320px; 
+    margin: 20px; 
+  } 
+  #slides{
+    height: 100%;
+  }
+  .slide{
+    width: 320px;
+    background-color: #FF0000;
+  }  
+  .slide img{
+    width: 320px;
+  }
+  
+  #navigation-manual{
+    width: 320px;
+    margin-top: 320px;
+  }
+}
 @media (max-width:850px) {
   #nav-list{
     position: absolute;
@@ -627,6 +776,16 @@ form{
       margin: 30px 0;
     }
   }
+
+  @media (max-width:710px){
+    #slider{
+      display: none;
+    }
+    #container-projetos{
+      margin: auto;
+      width: 100%;
+    }
+  }
 @media (max-width:570px){
     #minha-imagem{
       display: none;
@@ -646,11 +805,6 @@ form{
     margin-right: 55px;
   } 
 }
- @media (max-height:620px){
-  #seta-para-baixo{
-    display: none;
-  }
-}
 
 @media (max-width:360px){
   section{
@@ -666,17 +820,24 @@ form{
     padding: 5px;
   }
   #tela-4 p{
-    padding: 3px 0;
+    padding: 3px 0 ;
   }
   #tela-5 h2{
-    margin: 50px 0 20px 0;
+    margin: 30px 0 20px 0;
   }
-  #tela-5{
-    padding-bottom: 50px;
-  }
-  #seta-para-baixo{
+  #seta-para-baixo, #seta-para-cima{
     display: none;
   }  
+}
+@media (max-width:320px) {
+  #tela-5{
+    margin-bottom: 50px;
+  }
+}
+@media (max-height:620px){
+  #seta-para-baixo{
+    display: none;
+  }
 }
 /* @media (max-width:390px){
   section{
