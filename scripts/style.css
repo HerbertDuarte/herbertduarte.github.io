@@ -406,7 +406,6 @@ article > div > span{
   color: var(--color04);
 }
 .link-repo:hover{
-  text-decoration: underline;
   color: var(--color02);
 }
 .link-site i{
