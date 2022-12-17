@@ -443,6 +443,7 @@ article > div > span{
 .slide{
   width: 460px;
   position: relative;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -703,7 +704,7 @@ aside{
   }
   .slide{
     width: 320px;
-    background-color: #FF0000;
+    height: 100%;
   }  
   .slide img{
     width: 320px;
