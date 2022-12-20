@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/bb9ff7a12b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="scripts/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
   <link rel="shortcut icon" href="images/icon-white.png" type="image/x-icon">
   <title>Portifólio - Herbert Duarte</title>
   <script defer src="scripts/smooth-scroll.js"></script>
@@ -13,6 +14,7 @@
   <script defer src="scripts/app.js"></script>
   <script defer src="scripts/indicador-scroll.js"></script>
   <script defer src="scripts/slides.js"></script>
+  <script defer src="scripts/dark-light-mode.js"></script>
 </head>
 <body>
   <header id="menu">
@@ -34,8 +36,17 @@
   </header>
 
   <main class="centralizar">
-
+    <div class="color-mode-box">
+      <input type="checkbox" name="toggle-color-mode" id="toggle-color-mode">
+      <label for="toggle-color-mode">
+      <i class="bx bx-moon"></i>
+      <i class="bx bxs-sun"></i>
+      <span class="ball"></span>
+      </label>
+    </div>
     <section id="tela-1">
+
+        
 
         <div id="TextBox-1">
           <h2>Olá, eu me chamo <span>Herbert</span>. Seja bem vindo(a) à minha página de portifólio.</h2>

@@ -9,42 +9,41 @@
     
     document.addEventListener("scroll", function() {
       var posicaoy = window.pageYOffset
-      console.log(posicaoy)
       
       if(posicaoy < 470){
-        inicio.style.color = '#FFD921'
-        sobre.style.color = 'white'
-        habilidades.style.color = 'white'
-        projetos.style.color = 'white'
-        contatos.style.color = 'white'
+        inicio.style.color = 'var(--color02)'
+        sobre.style.color = 'var(--color04)'
+        habilidades.style.color = 'var(--color04)'
+        projetos.style.color = 'var(--color04)'
+        contatos.style.color = 'var(--color04)'
       }
       else if(posicaoy >= 470 && posicaoy <= 1076){
-        inicio.style.color = 'white'
-        sobre.style.color = '#FFD921'
-        habilidades.style.color = 'white'
-        projetos.style.color = 'white'
-        contatos.style.color = 'white'
+        inicio.style.color = 'var(--color04)'
+        sobre.style.color = 'var(--color02)'
+        habilidades.style.color = 'var(--color04)'
+        projetos.style.color = 'var(--color04)'
+        contatos.style.color = 'var(--color04)'
       }
       else if(posicaoy >= 1076 && posicaoy <= 1750){
-        inicio.style.color = 'white'
-        sobre.style.color = 'white'
-        habilidades.style.color = '#FFD921'
-        projetos.style.color = 'white'
-        contatos.style.color = 'white'
+        inicio.style.color = 'var(--color04)'
+        sobre.style.color = 'var(--color04)'
+        habilidades.style.color = 'var(--color02)'
+        projetos.style.color = 'var(--color04)'
+        contatos.style.color = 'var(--color04)'
       }
       else if(posicaoy >= 1750 && posicaoy <= 2330){
-        inicio.style.color = 'white'
-        sobre.style.color = 'white'
-        habilidades.style.color = 'white'
-        projetos.style.color = '#FFD921'
-        contatos.style.color = 'white'
+        inicio.style.color = 'var(--color04)'
+        sobre.style.color = 'var(--color04)'
+        habilidades.style.color = 'var(--color04)'
+        projetos.style.color = 'var(--color02)'
+        contatos.style.color = 'var(--color04)'
       }
       else{
-        inicio.style.color = 'white'
-        sobre.style.color = 'white'
-        habilidades.style.color = 'white'
-        projetos.style.color = 'white'
-        contatos.style.color = '#FFD921'
+        inicio.style.color = 'var(--color04)'
+        sobre.style.color = 'var(--color04)'
+        habilidades.style.color = 'var(--color04)'
+        projetos.style.color = 'var(--color04)'
+        contatos.style.color = 'var(--color02)'
       }
 
     })
