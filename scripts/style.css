@@ -320,7 +320,7 @@ h2 > span{
   color: var(--color02);
   animation: float 1.5s linear infinite;
   position: absolute;
-  bottom: 11vh;
+  bottom: 7vh;
   left: 47%;
 }
 
