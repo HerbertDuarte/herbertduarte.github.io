@@ -46,9 +46,10 @@
   border-radius: 50%;
   position: absolute;
   right: 0;
-  left: auto;
+  top: 0;
+  bottom: 0;
   transition: transform .3s;
-  margin-top: 1px;
+ 
 }
 #toggle-color-mode:checked ~ label > .ball{
   transform: translateX(-25px);
