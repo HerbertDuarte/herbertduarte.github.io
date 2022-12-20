@@ -22,7 +22,7 @@
 .color-mode-box{
   position: absolute;
   right: 30px;
-  top: 67px;
+  top: 65px;
   background-color: var(--color01);
   box-shadow: 0px 0px 1px var(--color00);
   padding: 1px 3px;
@@ -294,6 +294,10 @@ h2 > span{
   color: var(--color02);
 }
 
+/* SOBRE MIM */
+#tela-2 h2{
+  margin: 18px 0;
+}
 .minha-div{
   max-height: 320px;
   max-width: 800px;
@@ -855,6 +859,9 @@ aside{
     }
     .BoxIN2{
       margin-top: 15px;
+    }
+    .color-mode-box{
+      right: 10px;
     }
   }
 @media (max-width:500px) {
