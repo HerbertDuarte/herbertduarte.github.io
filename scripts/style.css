@@ -374,8 +374,14 @@ h3 i{
   max-width: 400px;
 }
 
+.crs{
+  min-width: 77.22px;
+}
+
 .percentual{
   color: var(--color02);
+  min-width: 50px;
+  text-align: end;
 }
 
 .cursoName{
