@@ -7,7 +7,9 @@ function getDistanceFromTheTop(element){
 
 function scrollToSection(event){
     event.preventDefault()
-    const distanceFromTheTop = getDistanceFromTheTop(event.target) 
+    const distanceFromTheTop = getDistanceFromTheTop(event.target)
+    const ul = document.getElementById('nav-list')
+    ul.removeAttribute('data-target') 
     smoothScrollTo(0, distanceFromTheTop, 400)
     }
     
