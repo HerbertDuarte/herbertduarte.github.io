@@ -7,7 +7,7 @@ function ClickBtn(event){
 
   event.stopPropagation()
   
-  //[2] Mudar o ícone quando a navbar é acionada!
+  //[1] Mudar o ícone quando a navbar é acionada!
   
   menu.classList.toggle('active')
 
@@ -16,9 +16,9 @@ function ClickBtn(event){
   }
   mudarIcone()
 
-  //---------------[2] Fim
+  //---------------[1] Fim
 
-  //[3] chamar função de click fora do range da nav
+  //[2] chamar função de click fora do range da nav
 
   clickOut(menu, () => {
     menu.classList.remove('active')
@@ -29,7 +29,7 @@ function ClickBtn(event){
     btnMenu.classList.remove('active')
   })
 
-  //---------------[3] Fim
+  //---------------[2] Fim
 }
 
 function clickOut(targetElement, callback){
