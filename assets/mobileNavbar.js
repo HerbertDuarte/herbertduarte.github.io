@@ -24,6 +24,10 @@ function ClickBtn(event){
     menu.classList.remove('active')
     btnMenu.classList.remove('active')
   })
+  clickOut(btnMenu, () => {
+    menu.classList.remove('active')
+    btnMenu.classList.remove('active')
+  })
 
   //---------------[3] Fim
 }
