@@ -322,7 +322,7 @@ h2 > span{
   animation: float 1.5s linear infinite;
   position: absolute;
   bottom: 7vh;
-  left: 47%;
+  left: calc(50% - 18px);
 }
 
 /* Habilidades */
