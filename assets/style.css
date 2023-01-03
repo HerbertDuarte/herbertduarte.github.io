@@ -695,7 +695,7 @@ form{
   border: 2px solid var(--color02);
   border-radius: 4px;
   background-color: var(--color01);
-  color: white;
+  color: var(--color04);
   font-size: 1.1em;
   outline: 0;
   text-indent: 10px;
@@ -703,12 +703,15 @@ form{
 
 }
 .mensagem textarea{
-  width: 100%;
+  width: calc(100% - 3px);
   border: 2px solid var(--color02);
   border-radius: 4px;
   background-color: var(--color01);
-  color: white;
+  color: var(--color04);
+  padding-top: 3px;
   font-size: 1.1em;
+  padding-inline-start: 3px;
+  padding-inline-end: 0;
   outline: 0;
   text-indent: 10px;
   font-family: 'Chakra Petch', sans-serif;
