@@ -39,7 +39,7 @@
   z-index: 100;
 }
 
-.ball{
+#ball{
   width: 20px;
   height: 20px;
   background-color:var(--color02);
@@ -51,11 +51,11 @@
   transition: transform .3s;
  
 }
-#toggle-color-mode:checked ~ label > .ball{
+.mudar{
   transform: translateX(-25px);
 }
 #toggle-color-mode{
-  display: none;
+  display: block;
 }
 
 ::-webkit-scrollbar{
