@@ -25,11 +25,16 @@ const mudarTema = ()=>{
 }
 
 const verificarTema = ()=>{
-  if(localStorage.tema == 'claro'){
+
+if(!localStorage.tema){
+  localStorage.setItem('tema','escuro')
+}
+
+  else if(localStorage.tema == 'claro'){
     $ball.classList.add('mudar')
     $html.classList.add('light-mode')
   } 
-  if(localStorage.tema == 'escuro'){
+  else if(localStorage.tema == 'escuro'){
     $ball.classList.remove('mudar')
     $html.classList.remove('light-mode')
   }
