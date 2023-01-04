@@ -7,7 +7,7 @@ let i = 1
  function nextImage(){
      i++
 
-     if (i > 4) {
+     if (i > 5) {
          i = 1
    }
 

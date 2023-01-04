@@ -484,7 +484,6 @@ article > div > span{
   overflow: hidden;
   border-radius: 5px;
   border: 3px solid var(--color03);
-
 }
 
 #slides{
@@ -541,16 +540,17 @@ article > div > span{
 #radio1:checked ~ .first{
   margin-left: 0;
 }
-
 #radio2:checked ~ .first{
   margin-left: -20%;
 }
-
 #radio3:checked ~ .first{
   margin-left: -40%;
 }
 #radio4:checked ~ .first{
   margin-left: -60%;
+}
+#radio5:checked ~ .first{
+  margin-left: -80%;
 }
 
 
@@ -563,15 +563,16 @@ article > div > span{
 #radio1:checked ~ #navigation-manual #b1{
   background-color: var(--color02);
 }
-
 #radio2:checked ~ #navigation-manual #b2{
   background-color: var(--color02);
 }
-
 #radio3:checked ~ #navigation-manual #b3{
   background-color: var(--color02);
 }
 #radio4:checked ~ #navigation-manual #b4{
+  background-color: var(--color02);
+}
+#radio5:checked ~ #navigation-manual #b5{
   background-color: var(--color02);
 }
 .manual:hover{
