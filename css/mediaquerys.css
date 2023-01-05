@@ -53,11 +53,6 @@
     margin-left: 10vw;
   }
   
-  .nav-items:hover{
-    color: var(--color04);
-    text-shadow: 1px 1px 5px #0000005c;
-  }
-  
 }
 @media (max-width:730px){
   #container-habilidades{
