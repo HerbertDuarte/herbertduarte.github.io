@@ -1,0 +1,34 @@
+/* SOBRE MIM */
+#tela-2{
+  overflow: hidden;
+}
+
+#tela-2 h2{
+  margin: 18px 0;
+}
+.minha-div{
+  max-height: 320px;
+  max-width: 800px;
+  text-align: center;
+  visibility: hidden;
+}
+
+#minha-imagem{
+  transform: translateY(0);
+  width: 100%;
+  background-color: var(--color02);
+  border-radius: 50% 50% 50% 5%;
+  margin: 20px auto;
+  animation: float 5s linear infinite;
+  max-height: 320px;
+  max-width: 320px;
+}
+
+#seta-para-baixo i{
+  font-size: 2.7em;
+  color: var(--color02);
+  animation: float 1.5s linear infinite;
+  position: absolute;
+  bottom: 7vh;
+  left: calc(50% - 18px);
+}

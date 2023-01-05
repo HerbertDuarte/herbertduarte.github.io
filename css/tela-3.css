@@ -1,0 +1,108 @@
+/* Habilidades */
+
+#tela-3{
+  max-width: 800px;
+  align-items: start;
+}
+#tela-3 h3{
+  text-align: start;
+  width: 100%;
+  margin: 20px 0;
+  font-size: 1.7em;
+  cursor: pointer;
+  max-width: 400px;
+  padding: 0 10px;
+}
+#container-habilidades{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+
+}
+
+.cont-hab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h3 i{
+  color: var(--color02);
+}
+#cursos,
+#conhecimentos{
+  width: 100%;
+  min-width: 240px;
+  padding: 0 20px;
+  margin: -10px;
+}
+
+.TituloCursos{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 400px;
+}
+
+.crs{
+  min-width: 77.22px;
+}
+
+.percentual{
+  color: var(--color02);
+  min-width: 50px;
+  text-align: end;
+}
+
+.cursoName{
+  color: var(--color00);
+}
+
+.barra{
+  max-width: 400px;
+  height: 10px;
+  background-color: var(--color00);
+  margin-bottom: 20px;
+}
+
+.concluido,
+#c10,
+#c70,
+#c30,
+#c50,
+#c90{
+  background-color: var(--color02);
+  height: 10px;
+}
+
+.concluido{
+  width: 100%;
+}
+#c10{
+  width: 10%;
+}
+#c70{
+  width: 70%;
+}
+#c50{
+  width: 50%;
+}
+#c30{
+  width: 30%;
+}
+#c90{
+  width: 90%;
+}
+article{
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  margin: auto;
+}
+
+article > div > span{
+  display:block;
+}

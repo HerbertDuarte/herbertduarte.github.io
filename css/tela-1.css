@@ -1,0 +1,17 @@
+/* Tela de início */
+
+#tela-1{
+  padding-top: 50px;
+  position: relative;
+}
+
+#tela-1 p {
+  padding: 30px 0;
+}
+#TextBox-1{
+  padding-top: 40px;
+}
+
+h2 > span{
+  color: var(--color02);
+}
