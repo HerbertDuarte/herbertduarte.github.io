@@ -6,10 +6,18 @@ function scr(){
     easing: 'ease-out'
   })
 
+
   sr.reveal('.reveal-left', {
 
     origin:'left',
     reset: 'false'
+
+  })
+  sr.reveal('.reveal-left-rapid', {
+
+    origin:'left',
+    reset: 'false',
+    duration: 550
 
   })
   sr.reveal('.reveal-top', {
