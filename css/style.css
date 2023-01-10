@@ -7,8 +7,8 @@
 :root{
   --color00: #828282;
   --color01: #2c2c2c;
-  --color02: #FFD921;
-  --color03: #ffe354;
+  --color02: #ffc61c;
+  --color03: #ffde3b;
   --color04: #ffffff; 
   --color05: #434343;
 }
@@ -16,8 +16,8 @@
 .light-mode:root{
   --color00: #828282;
   --color01: #fafafa;
-  --color02: #4727AF;
-  --color03: #7452e1;
+  --color02: #f8ba00;
+  --color03: #ffde3b;
   --color04: #222; 
   --color05: #bdbdbd;
 }
