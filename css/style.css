@@ -11,6 +11,7 @@
   --color03: #ffde3b;
   --color04: #ffffff; 
   --color05: #434343;
+  --color06: #ffc61c;
 }
 
 .light-mode:root{
@@ -20,6 +21,7 @@
   --color03: #ffde3b;
   --color04: #222; 
   --color05: #bdbdbd;
+  --color06: #e6ac00;
 }
 .color-mode-box{
   position: absolute;
@@ -270,7 +272,7 @@ p{
 
 p > a,
 p > span{
-  color: var(--color02);
+  color: var(--color06);
   text-decoration: none;
 }
 
