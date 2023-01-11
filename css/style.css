@@ -7,21 +7,21 @@
 :root{
   --color00: #828282;
   --color01: #2c2c2c;
-  --color02: #ffc61c;
-  --color03: #ffde3b;
+  --color02: #fbae29;
+  --color03: #ffb43b;
   --color04: #ffffff; 
   --color05: #434343;
-  --color06: #ffc61c;
+  --color06: #ffaa20;
 }
 
 .light-mode:root{
   --color00: #828282;
   --color01: #fafafa;
-  --color02: #f8ba00;
-  --color03: #ffde3b;
+  --color02: #ffa200;
+  --color03: #ffb43b;
   --color04: #222; 
   --color05: #bdbdbd;
-  --color06: #e6ac00;
+  --color06: #ee9505;
 }
 .color-mode-box{
   position: absolute;
