@@ -140,6 +140,10 @@ body{
   scroll-behavior: smooth;
 }
 
+button{
+  font-family: 'Chakra Petch', sans-serif;
+}
+
 body{
   background-color: var(--color01);
   font-family: 'Chakra Petch', sans-serif;
