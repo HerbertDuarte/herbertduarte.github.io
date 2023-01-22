@@ -120,6 +120,14 @@
     margin-right: 55px;
   } 
 }
+@media (max-width:400px) {
+  #btnDonload1{
+    display: none;
+  }
+  #btnDonload2{
+    display: block;
+  }
+}
 
 @media (max-width:360px){
   section{
