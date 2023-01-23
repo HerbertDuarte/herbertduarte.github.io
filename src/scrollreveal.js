@@ -1,7 +1,7 @@
 function scr(){
 
   window.sr = ScrollReveal({
-    duration: 850,
+    duration: 550,
     distance: '250px',
     easing: 'ease-out'
   })
@@ -13,11 +13,18 @@ function scr(){
     reset: 'false'
 
   })
+  sr.reveal('.reveal-barra', {
+
+    origin:'left',
+    opacity: 1,
+    reset: 'false',
+    duration: 1250
+
+  })
   sr.reveal('.reveal-left-rapid', {
 
     origin:'left',
-    reset: 'false',
-    duration: 550
+    reset: 'false'
 
   })
   sr.reveal('.reveal-top', {
@@ -41,7 +48,8 @@ function scr(){
   sr.reveal('.proj-item', {
 
     origin:'left',
-    reset: 'false'
+    reset: 'false',
+    duration: 450
 
   })
 
