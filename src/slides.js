@@ -1,4 +1,4 @@
-setInterval(function () {nextImage()},4000)
+setInterval(function () {nextImage()},6500)
 
 function nextImage(){
     const array = [...document.getElementsByName('slide-items')]
