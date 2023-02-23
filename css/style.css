@@ -161,8 +161,8 @@ main{
 
 header{
   padding: 0 4vw;
-  height: 60px;
   width: 92vw;
+  height: 60px;
   position: fixed;
   z-index: 6;
   display: flex;
