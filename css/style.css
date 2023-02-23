@@ -178,6 +178,11 @@ header{
   list-style: none;
   gap: 2.5vw;
 }
+
+.nav-items{
+  white-space: nowrap;
+}
+
 #inicio{
   color: var(--color02);
 }
