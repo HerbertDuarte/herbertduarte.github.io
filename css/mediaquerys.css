@@ -243,7 +243,7 @@
     margin: 45px 0 10px 0;
   }
   .socialBox {
-    padding: 5px;
+    padding: 10px 5px;
   }
   #tela-4 p {
     padding: 3px 0;
@@ -269,5 +269,10 @@
 @media (max-height: 655px) {
   #seta-para-cima{
     display: none;
+  }
+}
+@media (max-height: 570px) {
+  .socialBox {
+    padding: 5px;
   }
 }
