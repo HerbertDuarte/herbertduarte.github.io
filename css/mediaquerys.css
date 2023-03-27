@@ -180,7 +180,7 @@
   #slider {
     height: 310px;
     max-width: 320px;
-    margin: 20px;
+    margin: 0px;
   }
   #slides {
     height: 100%;
