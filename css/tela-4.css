@@ -1,5 +1,9 @@
 /* Projetos */
 
+#tela-4{
+  max-height: 880px;
+}
+
 #tela-4 h2{
   margin: 15px 0 5px 0;
 }
@@ -15,6 +19,11 @@
 
 .fa-link{
   color: var(--color03);
+}
+
+#proj-list{
+  min-width: 232px;
+  padding-right: 20px;
 }
 
 .proj-item{
@@ -38,12 +47,15 @@
   color: var(--color04);
 }
 .container-projetos{
+  display: flex;
+  justify-content: center;
   flex-direction: row ;
-
+  align-items: center;
 }
 
 #slider{
-  margin: 0 auto;
+  margin: 20px; 
+  margin-left: 0;
   height: 310px;
   max-width: 460px;
   overflow: hidden;
