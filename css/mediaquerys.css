@@ -149,6 +149,7 @@
     width: 100%;
   }
   #tela-4 {
+    min-height: 710px;
     max-height: 710px;
     padding-bottom: 120px;
     padding-top: 20px;
@@ -265,31 +266,8 @@
     display: none;
   }
 }
-@media (max-height: 760px) {
-}
-/* @media (max-width:390px){
-  section{
-    width: calc(100vw - 50px);
-  }
-}
-
-@media (max-width:345px){
-  section{
-    width: calc(100vw - 30px);
-  }
-  .socialBox p{
+@media (max-height: 655px) {
+  #seta-para-cima{
     display: none;
   }
-  .socialBox{
-    padding: 10px 0;
-    margin: 5px 2.5px;
-    justify-content: center;
-  }
-  .contatos-div{
-    min-width: none;
-    column-gap: 0;
-  }
-  .contact-item{
-    transform: translateX(-0px);
-  }
-} */
+}
