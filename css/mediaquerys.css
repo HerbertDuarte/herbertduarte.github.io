@@ -204,8 +204,13 @@
     min-height: 700px;
   }
 }
+@media (max-width: 410px) {
+  #slider {
+    scale: 0.95;
+  }
+}
 
-@media (max-width: 360px) {
+@media (max-width: 390px) {
   #slider {
     scale: 0.9;
   }
