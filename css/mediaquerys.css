@@ -67,15 +67,13 @@
 @media (max-width: 730px) {
   #container-habilidades {
     flex-direction: column;
-    width: 100%;
-    align-items: center;
   }
   .barra,
   .TituloCursos,
   #cursos,
   #conhecimentos {
     width: 100%;
-    max-width: 400px;
+    max-width: calc(100% - 20px);
   }
   #cursos,
   #conhecimentos {
@@ -84,26 +82,23 @@
   }
   #minha-imagem {
     width: 250px;
-  }
-  .barra {
-    margin-bottom: 11px;
-    height: 5px;
-  }
-  .concluido,
-  #c10,
-  #c70,
-  #c30,
-  #c50,
-  #c90 {
-    background-color: var(--color02);
-    height: 5px;
-  }
-  h2 {
-    font-size: 1.7em;
-    margin: 10px 0;
-  }
-  #tela-2 h2 {
-    margin: 30px 0;
+
+    .concluido,
+    #c10,
+    #c70,
+    #c30,
+    #c50,
+    #c90 {
+      background-color: var(--color02);
+      height: 5px;
+    }
+    h2 {
+      font-size: 1.7em;
+      margin: 10px 0;
+    }
+    #tela-2 h2 {
+      margin: 30px 0;
+    }
   }
 }
 
@@ -223,12 +218,12 @@
     display: block;
     margin: 0 auto;
     background-color: var(--color01);
-    background-color: var(--color01);;
+    background-color: var(--color01);
   }
   #tela-2 {
     min-height: 770px;
   }
-  #tela-3{
+  #tela-3 {
     padding-top: 20px;
   }
 }
@@ -272,7 +267,7 @@
   }
 }
 @media (max-height: 655px) {
-  #seta-para-cima{
+  #seta-para-cima {
     display: none;
   }
 }

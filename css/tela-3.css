@@ -3,6 +3,7 @@
 #tela-3{
   max-width: 800px;
   align-items: start;
+  padding-bottom: 80px;
 }
 #tela-3 h3{
   text-align: start;
@@ -17,9 +18,10 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-
+  justify-content: center;
+  align-items: center;
+  gap: 3;
+  padding: 20px 0;
 }
 
 .cont-hab{
@@ -28,6 +30,7 @@
   align-items: center;
   flex-direction: column;
 }
+
 h3 i{
   color: var(--color02);
 }
@@ -44,11 +47,14 @@ h3 i{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  max-width: 400px;
+  margin: 0 10px;
+
+  max-width: 380px;
 }
 
 .crs{
   min-width: 77.22px;
+  font-size: 20px;
 }
 
 .percentual{
@@ -62,10 +68,12 @@ h3 i{
 }
 
 .barra{
-  max-width: 400px;
+  max-width: 380px;
   height: 10px;
   background-color: var(--color00);
+  margin: 0 10px;
   margin-bottom: 20px;
+  overflow-x: hidden;
 }
 
 .concluido,
@@ -82,7 +90,7 @@ h3 i{
   width: 100%;
 }
 #c10{
-  width: 10%;
+  width: 20%;
 }
 #c50{
   width: 50%;
