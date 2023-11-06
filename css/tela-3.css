@@ -3,7 +3,6 @@
 #tela-3{
   max-width: 800px;
   align-items: start;
-  padding-bottom: 80px;
 }
 #tela-3 h3{
   text-align: start;
@@ -20,7 +19,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 3;
+  gap: 15px;
   padding: 20px 0;
 }
 
@@ -29,6 +28,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 10px;
 }
 
 h3 i{
@@ -38,8 +38,7 @@ h3 i{
 #conhecimentos{
   width: 100%;
   min-width: 240px;
-  padding: 0 20px;
-  margin: -10px;
+  padding: 0;
 }
 
 .TituloCursos{
@@ -47,8 +46,6 @@ h3 i{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 0 10px;
-
   max-width: 380px;
 }
 
@@ -69,10 +66,10 @@ h3 i{
 
 .barra{
   max-width: 380px;
+  width: 100%;
   height: 10px;
   background-color: var(--color00);
-  margin: 0 10px;
-  margin-bottom: 20px;
+  margin: 0 0 15px 0;
   overflow-x: hidden;
 }
 

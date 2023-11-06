@@ -1,5 +1,7 @@
 /* CONTATOS */
-
+#tela-5{
+  padding-bottom: 120px;
+}
 .contatos-div{
   columns: 3;
   list-style: none;

@@ -248,10 +248,7 @@ header{
 
 section{
   transform: translateY(-10vh);
-  height: calc(100vh - 60px);
-  max-height: 640px;
   max-width: 800px;
-  min-height: 524px;
   width: calc(100vw - 80px);
   padding: 70px 25px 0 25px;
   animation: fade .7s ease-in;
