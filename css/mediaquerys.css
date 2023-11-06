@@ -288,6 +288,9 @@
   #tela-5 {
     padding-bottom: 25px;
   }
+  #seta-para-cima {
+    display: none;
+  }
   .socialBox {
     padding: 10px 5px;
   }
