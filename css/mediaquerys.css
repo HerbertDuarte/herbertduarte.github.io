@@ -260,9 +260,6 @@
   #tela-5 h2 {
     margin: 30px 0 20px 0;
   }
-  #seta-para-baixo {
-    display: none;
-  }
 }
 @media (max-width: 330px) {
   #tela-5 {
@@ -280,6 +277,9 @@
 @media (max-height: 620px) {
   #seta-para-baixo {
     display: none;
+  }
+  #tela-1{
+    padding-bottom: 0;
   }
 }
 @media (max-height: 655px) {
