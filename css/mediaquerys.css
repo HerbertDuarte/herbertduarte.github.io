@@ -83,7 +83,8 @@
   }
   #minha-imagem {
     width: 250px;
-
+    height: 250px;
+  }
     .concluido,
     #c10,
     #c70,
@@ -99,7 +100,7 @@
     }
     
   }
-}
+
 
 @media (max-width: 680px) {
   #slider {
