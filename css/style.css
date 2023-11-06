@@ -5,23 +5,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DotGothic16&display=swap');
 
 :root{
-  --color00: #828282;
-  --color01: #2c2c2c;
-  --color02: #fbae29;
-  --color03: #ffb43b;
-  --color04: #ffffff; 
-  --color05: #434343;
-  --color06: #ffaa20;
+  --color00: #3a3a3a;
+  --color01: #101010;
+  --color02: #a541f6;
+  --color03: #510e72;
+  --color04: #f7f7f7; 
+  --color05: #353535;
+  --color06: #bd43ff;
 }
-
-.light-mode:root{
-  --color00: #828282;
+ .light-mode:root{
+  --color00: #cacaca;
   --color01: #fafafa;
-  --color02: #ffa200;
-  --color03: #ffb43b;
+  --color02: #a541f6;
+  --color03: #be78e0;
   --color04: #222222; 
   --color05: #bdbdbd;
-  --color06: #ee9505;
+  --color06: #bd43ff;
 }
 .color-mode-box{
   position: absolute;
@@ -32,6 +31,8 @@
   padding: 1px 3px;
   border-radius: 15px;
   z-index: 4;
+  border: 1px solid var(--color00);
+
 }
 .color-mode-box label{
   position: relative;
@@ -49,9 +50,8 @@
   background-color:var(--color02);
   border-radius: 50%;
   position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  right: 1px;
+  bottom: 1px;
   transition: transform .3s;
  
 }
