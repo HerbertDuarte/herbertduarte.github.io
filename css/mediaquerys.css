@@ -197,10 +197,18 @@
   #tela-2 {
     min-height: 700px;
   }
+  #TextBox-1{
+    padding-top: 10px;
+  }
+  
 }
 @media (max-width: 410px) {
   #slider {
     scale: 0.95;
+  }
+  #tela-1 p{
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -208,12 +216,9 @@
   #slider {
     scale: 0.9;
   }
+  
 }
 @media (max-width: 420px) {
-  #tela-1 p{
-    padding: 0;
-    margin: 0;
-  }
   #btnDonload1 {
     display: none;
   }
@@ -236,6 +241,7 @@
   }
 }
 @media (max-width: 360px) {
+  
   section {
     width: calc(100vw - 40px);
   }
