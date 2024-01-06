@@ -182,9 +182,9 @@ header{
 .nav-items{
   white-space: nowrap;
 }
-
-#inicio{
+.nav-items:hover{
   color: var(--color02);
+  transition: color .5s ease;
 }
 #x{
   display: none;
