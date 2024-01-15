@@ -27,8 +27,8 @@ onMounted(()=>{
     }
       
     else if (menuIsOpen.value && !mobileMenu.value.contains(e.target)) {
-        menuIsOpen.value = false;
-      }
+      menuIsOpen.value = false;
+    }
   });
 })
 </script>
