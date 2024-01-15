@@ -13,7 +13,7 @@ import { UserRoundPlusIcon } from "lucide-vue-next";
         class="inline text-purple-500 pb-1.5"
       />
       Eu me chamo <span class="text-purple-500">Herbert Duarte</span>, sou
-      baiano, tenho 20 anos e resido atualmente no município de Vitória da
+      baiano, tenho 21 anos e resido atualmente no município de Vitória da
       Conquista - BA. Sou um entusiasta da tecnologia, apaixonado por exatas e
       estudante de programação. Estou matriculado no curso de Bacharelado em
       <span class="text-purple-500">Sistemas de Informação</span> no Instituto

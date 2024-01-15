@@ -11,7 +11,7 @@ import ViewTitle from '@/components/ViewTitle.vue';
     <p class="text-lg py-12">
       Esse site foi desenvolvido por mim como uma forma de compartilhar meu trabalho, minhas experiências, minhas habilidades e um pouco sobre mim. Aqui você também encontrará minhas redes sociais, cursos concluídos e meus repositórios.
     </p>
-    <a href="#about" class="flex justify-center items-center">
+    <a href="#about" class="flex justify-center items-center animate-bounce">
       <ChevronsDown :size="56" class="text-purple-600"/>
     </a>
   </section>

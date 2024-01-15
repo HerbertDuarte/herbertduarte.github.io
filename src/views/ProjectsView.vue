@@ -1,7 +1,7 @@
 <script setup>
 import Swiper from "@/components/Swiper.vue";
 import ViewTitle from "@/components/ViewTitle.vue";
-import { FolderClosedIcon, Laptop2Icon } from "lucide-vue-next";
+import { FolderClosedIcon, FolderLockIcon, Laptop2Icon } from "lucide-vue-next";
 
 const projects = [
   {
@@ -25,14 +25,19 @@ const projects = [
     link: "https://mini-blog-snowy.vercel.app/",
   },
   {
+    name: "Pokedex",
+    repo : "https://github.com/HerbertDuarte/pokedex",
+    link: "https://herbertduarte.github.io/pokedex/"
+  },
+  {
     name: "To Do List",
     repo : "https://github.com/HerbertDuarte/to-do-list",
     link: "https://herbertduarte.github.io/to-do-list/"
   },
   {
     name: "Gantt Hub",
-    repo : null,
-    link: "https://herbertduarte.github.io/to-do-list/"
+    repo : "https://www.linkedin.com/posts/herbert-duarte-8534b71a2_vuejs-quasarframework-nestjs-activity-7147697683078582272-tIN4?utm_source=share&utm_medium=member_desktop",
+    link: "https://gantthub.pmvc.ba.gov.br/login"
   }
 ];
 </script>
@@ -49,8 +54,8 @@ const projects = [
       hospedados:
     </p>
     <p></p>
-    <div class="flex">
-      <Swiper class="flex-1 gap-8" />
+    <div class="flex flex-col justify-center items-start">
+        <Swiper />
       <div class="py-6 flex-1 text-lg">
         <ul>
           <li class="py-2" :key="index" v-for="(project, index) in projects">
@@ -59,13 +64,15 @@ const projects = [
               :stroke-width="2.2"
               :size="32"
               class=" pb-1.5 inline"
+              target="_blank"
               />
             </a>
-            <a v-else class="hover:text-purple-300 text-purple-600 transition-all duration-500">
-              <FolderClosedIcon
+            <a v-else class="hover:text-red-900 text-purple-600 transition-all duration-500 cursor-pointer">
+              <FolderLockIcon
               :stroke-width="2.2"
               :size="32"
               class=" pb-1.5 inline"
+              target="_blank"
               />
             </a>
             <a class="pl-2 hover:text-purple-500 transition-all duration-500" target="_blank" :href="project.link">

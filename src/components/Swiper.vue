@@ -1,87 +1,110 @@
 <template>
-  <div class="flex flex-col justify-center items-center gap-3 my-8 w-fit">
-    <div
+  <div class="flex flex-col justify-center items-center gap-4">
+
+    <div class="border-4 rounded-lg border-purple-800">
+      <div
+      id="slider-container"
       ref="sliderContainer"
       :style="`width : 100%; max-width: ${imageWidth}; overflow-x: hidden;`"
       class="rounded-md"
-    >
-      <div
-        ref="slider"
-        :style="`width : 100%; max-width: ${
-          imageWidth * images.length
-        }; transition: transform 0.5s ease; transform: translateX(-${
-          currentSlideIndex * rawImageWidth
-        }px);`"
-        class="flex"
       >
+      <div
+      id="slider"
+      ref="slider"
+      :style="`width : 100%; max-width: ${
+        imageWidth * images.length
+      }; transition: transform 0.5s ease; transform: translateX(-${
+        currentSlideIndex * rawImageWidth
+      }px);`"
+        class="flex"
+        >
         <img
-          :key="index"
-          v-for="(image, index) in images"
-          class="object-cover"
-          :src="image.src"
-          :alt="image.alt"
+        :key="index"
+        v-for="(image, index) in images"
+        class="object-cover"
+        :src="image.src"
+        :alt="image.alt"
         />
       </div>
     </div>
-    <div class="gap-1 flex justify-center items-center">
+  </div>
+  <div class="gap-1 flex justify-center items-center">
       <div
-        v-for="(image, index) in images"
-        :class="`w-3 h-3 rounded-full ${
-          index === currentSlideIndex ? 'bg-purple-500' : ' bg-purple-950'
-        }`"
+      v-for="(image, index) in images"
+      :class="`w-3 h-3 rounded-full ${
+        index === currentSlideIndex ? 'bg-purple-500' : ' bg-purple-950'
+      }`"
       />
     </div>
   </div>
-</template>
+  </template>
 
 <script setup>
-import { onMounted, ref } from "vue";
+import { onBeforeUnmount, onMounted, ref } from "vue";
 
-const sliderContainer = ref(null);
-const slider = ref(null);
-const imageWidth = ref("460px");
-const rawImageWidth = ref(460);
+const sliderContainer = ref(document.getElementById("slider-container"));
+const slider = ref(document.getElementById("slider"));
+const rawImageWidth = ref(1024);
+const imageWidth = ref(`${rawImageWidth.value}px`);
 const currentSlideIndex = ref(0);
+// NO NOTEBOOK O INSPECIONAR PRECISOU TER LARGURA DE 1400PX PARA FICAR NA PROPORÇÃO CORRETA
 const images = ref([
   {
-    alt: "slide 1",
-    src: "../../public/slide1.PNG",
+    alt: "GanttHub",
+    src: "./projetos/gantthub.png",
   },
   {
-    alt: "slide 1",
-    src: "../../public/slide2.PNG",
+    alt: "Portifólio Maria Beatriz",
+    src: "./projetos/portbia.png",
   },
   {
-    alt: "slide 1",
-    src: "../../public/slide3.PNG",
+    alt: "Landing Page Ana Clara",
+    src: "./projetos/ana-clara.png",
   },
   {
-    alt: "slide 1",
-    src: "../../public/slide5.PNG",
+    alt: "Pokedex",
+    src: "./projetos/pokedex.png",
   },
   {
-    alt: "slide 1",
-    src: "../../public/clara.PNG",
+    alt: "Todo List",
+    src: "./projetos/todo.png",
+  },
+  {
+    alt: "Mini Blog",
+    src: "./projetos/mini-blog.png",
+  },
+  {
+    alt: "Gestor Escolar PMVC",
+    src: "./projetos/gestor-escolar.png",
   },
 ]);
-
-function slideLoop(){
+function slideLoop() {
   setInterval(() => {
     if (currentSlideIndex.value < images.value.length - 1) {
       currentSlideIndex.value++;
     } else {
       currentSlideIndex.value = 0;
     }
-
     const translateXValue = -currentSlideIndex.value * rawImageWidth.value;
-    if(slider.value.style) slider.value.style.transform = `translateX(${translateXValue}px)`;
+    if (slider.value.style)
+      slider.value.style.transform = `translateX(${translateXValue}px)`;
   }, 3000);
 }
-
+function resizeSlide(){
+  fixImageWidth();
+}
+function fixImageWidth() {
+  rawImageWidth.value = slider.value.offsetWidth;
+}
 onMounted(() => {
-  slideLoop();
+  setTimeout(() => {
+    slideLoop();
+    fixImageWidth();
+  }, 1000);
 
-  console.log(sliderContainer.value.offsetWidth);
-  console.log(slider.value.offsetWidth);
+  window.addEventListener('resize', resizeSlide)
 });
+onBeforeUnmount(()=>{
+  window.removeEventListener('resize', resizeSlide)
+})
 </script>

@@ -11,8 +11,8 @@ const scrollToSection = (sectionId) => {
 </script>
 
 <template>
- <header class="flex justify-around py-6 fixed top-0 w-full text-lg text-zinc-300  bg-black">
-    <div class="text-purple-600 font-bold">
+ <header class="flex justify-around py-6 fixed top-0 z-50 w-full text-lg text-zinc-300  bg-black">
+    <div class="text-purple-600 font-bold font-mono">
       {{'</>'}}
     </div>
     <nav class="flex gap-5 text-zinc-100 z-10">
