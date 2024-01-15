@@ -11,7 +11,7 @@ const scrollToSection = (sectionId) => {
 </script>
 
 <template>
- <header class="flex justify-around py-6 fixed top-0 z-50 w-full text-lg text-zinc-300  bg-black">
+ <header id="header" class="flex justify-around py-6 fixed top-0 z-50 w-full  text-zinc-300">
     <div class="text-purple-600 font-bold font-mono">
       {{'</>'}}
     </div>
@@ -27,9 +27,6 @@ const scrollToSection = (sectionId) => {
       </a>
       <a class="cursor-pointer transition-all duration-500 hover:text-purple-500" @click="scrollToSection('projects')">
         Projetos
-      </a>
-      <a class="cursor-pointer transition-all duration-500 hover:text-purple-500" @click="scrollToSection('contacts')">
-        Contatos
       </a>
     </nav>
   </header>

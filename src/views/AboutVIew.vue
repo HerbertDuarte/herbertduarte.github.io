@@ -6,7 +6,7 @@ import { UserRoundPlusIcon } from "lucide-vue-next";
   <section id="about">
     <ViewTitle> Sobre mim </ViewTitle>
 
-    <p class="text-lg py-10">
+    <p class="py-10 leading-8">
       <UserRoundPlusIcon
         :stroke-width="2.2"
         :size="32"

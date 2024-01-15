@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9333EA;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,15 +30,19 @@ html {
   scroll-behavior: smooth;
 }
 body{
- background : black;
+ background : #080808;
  color: #eee;
+ font-size: 1.1rem;
 }
 #app {
   font-family: 'Chakra Petch', sans-serif;
 }
+
+#header{
+  background-color: #080808;
+}
 main{
- padding: 3rem;
- min-height: 100vh;
+ padding:  0 3rem 3rem 3rem;
  display: flex;
  flex-direction: column;
  justify-content: flex-start;

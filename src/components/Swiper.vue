@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col justify-center items-center gap-4">
 
-    <div class="border-4 rounded-lg border-purple-800">
+    <div class="border-4 rounded-xl border-purple-800 overflow-hidden">
       <div
       id="slider-container"
       ref="sliderContainer"
