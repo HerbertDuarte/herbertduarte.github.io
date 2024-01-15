@@ -1,4 +1,6 @@
 <script setup>
+import { MenuIcon, SandwichIcon } from 'lucide-vue-next';
+
 const scrollToSection = (sectionId) => {
   const element = document.getElementById(sectionId);
 
@@ -11,11 +13,12 @@ const scrollToSection = (sectionId) => {
 </script>
 
 <template>
- <header id="header" class="flex justify-around py-6 fixed top-0 z-50 w-full  text-zinc-300">
+ <header id="header" class="flex justify-center items-center px-12 fixed top-[-2px] z-50 w-full ">
+  <div  class="flex justify-between py-6 max-w-5xl w-full text-zinc-300">
     <div class="text-purple-600 font-bold font-mono">
       {{'</>'}}
     </div>
-    <nav class="flex gap-5 text-zinc-100 z-10">
+    <nav class="gap-5 text-zinc-100 z-10 md:flex hidden">
       <a class="cursor-pointer transition-all duration-500 hover:text-purple-500" @click="scrollToSection('home')">
         Home
       </a>
@@ -29,5 +32,13 @@ const scrollToSection = (sectionId) => {
         Projetos
       </a>
     </nav>
+    <nav class="md:hidden flex">
+      <MenuIcon
+      :size="26"
+      color="white"
+      class="cursor-pointer"
+      />
+    </nav>
+  </div>
   </header>
 </template>

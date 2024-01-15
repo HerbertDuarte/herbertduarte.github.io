@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import IndexPageVue from '@/Pages/IndexPage.vue'
-import AboutPageVue from '@/Pages/AboutPage.vue'
+import ThanksVue from '@/Pages/Thanks.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -11,9 +11,9 @@ const router = createRouter({
       component: IndexPageVue
     },
     {
-      path: '/about',
-      name: 'about',
-      component: AboutPageVue
+      path: '/thanks',
+      name: 'thanks',
+      component: ThanksVue
     }
   ]
 })

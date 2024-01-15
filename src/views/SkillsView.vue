@@ -69,11 +69,11 @@ const items2 = ref([
       />
       Conheça um pouco mais sobre minhas habilidades e tecnologias que domino, envolvendo tanto o desenvolvimento front-end quanto o back-end.
     </p>
-    <div class="flex gap-8">
-      <div class="py-2 flex-1">
+    <div class="flex lg:flex-row flex-col lg:gap-8 gap-0">
+      <div class="flex-1">
         <SkillBarProgress v-for="item in items1" :name="item.name" :level="item.level" />
       </div>
-      <div class="py-2 flex-1">
+      <div class="flex-1">
         <SkillBarProgress v-for="item in items2" :name="item.name" :level="item.level" />
       </div>
     </div>
