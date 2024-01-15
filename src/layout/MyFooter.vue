@@ -6,8 +6,8 @@ import {
   MailIcon,
   Phone,
   YoutubeIcon,
-} from "lucide-vue-next";
-import FormEmail from "@/components/FormEmail.vue";
+} from 'lucide-vue-next';
+import FormEmail from '@/components/FormEmail.vue';
 </script>
 <template>
   <footer

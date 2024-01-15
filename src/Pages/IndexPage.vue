@@ -7,9 +7,9 @@ import SkillsView from '@/views/SkillsView.vue';
 
 <template>
   <main>
-    <HomeView/>
-    <AboutVIew/>
-    <SkillsView/>
-    <ProjectsView/>
+    <HomeView />
+    <AboutVIew />
+    <SkillsView />
+    <ProjectsView />
   </main>
 </template>

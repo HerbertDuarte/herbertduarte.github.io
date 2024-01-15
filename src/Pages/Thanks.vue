@@ -1,7 +1,5 @@
 <template>
- <main>
-  <section>
-   Obrigado!
-  </section>
- </main>
+  <main>
+    <section>Obrigado!</section>
+  </main>
 </template>

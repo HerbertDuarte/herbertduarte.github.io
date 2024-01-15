@@ -1,10 +1,10 @@
 <script setup>
-import { onBeforeMount, ref } from "vue";
+import { onBeforeMount, ref } from 'vue';
 
 const props = defineProps({
   name: {
     type: String,
-    default: "",
+    default: '',
   },
   level: {
     type: Number,
@@ -12,21 +12,21 @@ const props = defineProps({
   },
 });
 
-const levelLabel = ref("Intermediário");
+const levelLabel = ref('Intermediário');
 
 onBeforeMount(() => {
   switch (props.level) {
     case 1:
-      levelLabel.value = "Básico";
+      levelLabel.value = 'Básico';
       break;
     case 2:
-      levelLabel.value = "Intermediário";
+      levelLabel.value = 'Intermediário';
       break;
     case 3:
-      levelLabel.value = "Avançado";
+      levelLabel.value = 'Avançado';
       break;
     case 4:
-      levelLabel.value = "Especialista";
+      levelLabel.value = 'Especialista';
       break;
   }
 });

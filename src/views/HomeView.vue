@@ -1,6 +1,6 @@
 <script setup>
-import { ChevronsDown } from "lucide-vue-next";
-import ViewTitle from "@/components/ViewTitle.vue";
+import { ChevronsDown } from 'lucide-vue-next';
+import ViewTitle from '@/components/ViewTitle.vue';
 </script>
 <template>
   <section id="home" class="pt-36">

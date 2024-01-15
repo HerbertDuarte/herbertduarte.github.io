@@ -1,43 +1,43 @@
 <script setup>
-import Swiper from "@/components/Swiper.vue";
-import ViewTitle from "@/components/ViewTitle.vue";
-import { FolderClosedIcon, FolderLockIcon, Laptop2Icon } from "lucide-vue-next";
+import Swiper from '@/components/Swiper.vue';
+import ViewTitle from '@/components/ViewTitle.vue';
+import { FolderClosedIcon, FolderLockIcon, Laptop2Icon } from 'lucide-vue-next';
 
 const projects = [
   {
-    name: "Portifólio Maria Beatriz",
-    repo: "https://github.com/HerbertDuarte/portbia",
-    link: "https://portbia.netlify.app/",
+    name: 'Portifólio Maria Beatriz',
+    repo: 'https://github.com/HerbertDuarte/portbia',
+    link: 'https://portbia.netlify.app/',
   },
   {
-    name: "Landing Page Ana Clara",
-    repo: "https://github.com/HerbertDuarte/lp-anaclara",
-    link: "https://anaclara-model.vercel.app/",
+    name: 'Landing Page Ana Clara',
+    repo: 'https://github.com/HerbertDuarte/lp-anaclara',
+    link: 'https://anaclara-model.vercel.app/',
   },
   {
-    name: "Gestor Escolar PMVC",
-    repo: "https://github.com/HerbertDuarte/teste-dev-cti",
-    link: "https://gestor-escolar-pmvc.vercel.app/",
+    name: 'Gestor Escolar PMVC',
+    repo: 'https://github.com/HerbertDuarte/teste-dev-cti',
+    link: 'https://gestor-escolar-pmvc.vercel.app/',
   },
   {
-    name: "Mini Blog (React+Firebase)",
-    repo: "https://github.com/HerbertDuarte/mini-blog",
-    link: "https://mini-blog-snowy.vercel.app/",
+    name: 'Mini Blog (React+Firebase)',
+    repo: 'https://github.com/HerbertDuarte/mini-blog',
+    link: 'https://mini-blog-snowy.vercel.app/',
   },
   {
-    name: "Pokedex",
-    repo: "https://github.com/HerbertDuarte/pokedex",
-    link: "https://herbertduarte.github.io/pokedex/",
+    name: 'Pokedex',
+    repo: 'https://github.com/HerbertDuarte/pokedex',
+    link: 'https://herbertduarte.github.io/pokedex/',
   },
   {
-    name: "To Do List",
-    repo: "https://github.com/HerbertDuarte/to-do-list",
-    link: "https://herbertduarte.github.io/to-do-list/",
+    name: 'To Do List',
+    repo: 'https://github.com/HerbertDuarte/to-do-list',
+    link: 'https://herbertduarte.github.io/to-do-list/',
   },
   {
-    name: "Gantt Hub",
-    repo: "https://www.linkedin.com/posts/herbert-duarte-8534b71a2_vuejs-quasarframework-nestjs-activity-7147697683078582272-tIN4?utm_source=share&utm_medium=member_desktop",
-    link: "https://gantthub.pmvc.ba.gov.br/login",
+    name: 'Gantt Hub',
+    repo: 'https://www.linkedin.com/posts/herbert-duarte-8534b71a2_vuejs-quasarframework-nestjs-activity-7147697683078582272-tIN4?utm_source=share&utm_medium=member_desktop',
+    link: 'https://gantthub.pmvc.ba.gov.br/login',
   },
 ];
 </script>

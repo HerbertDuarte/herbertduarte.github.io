@@ -1,7 +1,7 @@
 <script setup>
-import { SendHorizonalIcon } from "lucide-vue-next";
-import { ref } from "vue";
-const message = ref("");
+import { SendHorizonalIcon } from 'lucide-vue-next';
+import { ref } from 'vue';
+const message = ref('');
 </script>
 <template>
   <form class="flex-1 w-full relative">

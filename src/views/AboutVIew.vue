@@ -1,6 +1,6 @@
 <script setup>
-import ViewTitle from "@/components/ViewTitle.vue";
-import { UserRoundPlusIcon } from "lucide-vue-next";
+import ViewTitle from '@/components/ViewTitle.vue';
+import { UserRoundPlusIcon } from 'lucide-vue-next';
 </script>
 <template>
   <section id="about">
