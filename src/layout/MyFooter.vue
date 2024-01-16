@@ -11,7 +11,8 @@ import FormEmail from '@/components/FormEmail.vue';
 </script>
 <template>
   <footer
-    class="p-12 flex justify-center items-center border-t border-zinc-700"
+  id="footer"
+    class="flex justify-center items-center border-t border-zinc-700"
   >
     <div
       class="w-full flex lg:flex-row flex-col justify-center items-start gap-12 lg:gap-10 max-w-5xl"

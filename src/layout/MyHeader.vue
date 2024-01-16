@@ -34,7 +34,7 @@ onMounted(()=>{
 </script>
 
 <template>
- <header ref="header" id="header" class="flex justify-center items-center px-12 fixed top-[-2px] z-50 w-full ">
+ <header ref="header" id="header" class="flex justify-center items-center fixed top-[-2px] z-50 w-full ">
   <div class="flex justify-between py-6 max-w-5xl w-full text-zinc-300">
     <div class="text-purple-600 font-bold font-mono z-20">
       {{'</>'}}

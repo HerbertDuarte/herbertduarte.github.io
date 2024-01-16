@@ -40,6 +40,13 @@ body{
 
 #header{
   background-color: #080808;
+  padding: 0 3rem;
+}
+
+#footer{
+  background-color: #080808;
+  padding: 0 3rem;
+
 }
 main{
  padding: 0 3rem 3rem 3rem;
@@ -54,4 +61,16 @@ section{
   width: 100%;
   max-width: 64rem;
   padding-top: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  main{
+    padding: 0 1rem 1rem 1rem;
+  }
+  #header{
+    padding: 0 1rem;
+  }
+  #footer{
+    padding: 0 1rem;
+  }
 }

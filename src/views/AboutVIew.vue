@@ -22,7 +22,7 @@ import { UserRoundPlusIcon } from 'lucide-vue-next';
 
     <div class="flex justify-center items-center">
       <img
-        class="w-80 h-80 object-cover bg-purple-500 rounded-full rounded-bl-[40rem] shadow-md shadow-purple-500/50"
+        class="w-80 aspect-square object-cover bg-purple-500 rounded-full rounded-bl-[40rem] shadow-md shadow-purple-500/50"
         src="/herbert.png"
         alt="Foto de perfil de Herbert Duarte"
       />
