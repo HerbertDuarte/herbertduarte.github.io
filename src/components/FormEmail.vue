@@ -13,7 +13,7 @@ const message = ref('');
         class="border-[6px] border-purple-500 border-t-purple-900 rounded-full h-10 w-10 animate-spin"
       />
     </div> -->
-    <div class="w-full flex justify-between items-center pb-3">
+    <div class="w-full flex justify-between items-center pt-1.5 pb-3">
       <h3 class="text-xl font-medium">Fale comigo</h3>
       <a
         target="_blank"

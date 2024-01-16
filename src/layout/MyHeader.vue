@@ -34,27 +34,23 @@ onMounted(()=>{
 </script>
 
 <template>
- <header ref="header" id="header" class="flex justify-center items-center px-12 fixed top-[-2px] z-50 w-full ">
-  <div class="flex justify-between py-6 max-w-5xl w-full text-zinc-300">
-    <div class="text-purple-600 font-bold font-mono z-20">
+ <header ref="header" id="header" class="flex md:p-6 p-0 justify-center items-center fixed top-[-2px] z-50 w-full ">
+  <div class="flex justify-between items-center max-w-5xl w-full">
+    <div class="text-purple-600 font-bold font-mono z-20 md:px-6 px-4">
       {{'</>'}}
     </div>
     <nav 
-       ref="menuButton" class="md:hidden flex">
+       ref="menuButton" class="md:hidden flex py-5 pl-7 pr-4 cursor-pointer">
       <MenuIcon
       v-if="!menuIsOpen"
       :size="26"
-      color="white"
-      class="cursor-pointer"
       />
       <XIcon
       v-if="menuIsOpen"
       :size="26"
-      color="white"
-      class="cursor-pointer"
       />
     </nav>
-    <nav class="md:flex hidden justify-center items-center  gap-4 text-zinc-100">
+    <nav class="md:flex hidden justify-center items-center pr-6 gap-4">
       <a class="cursor-pointer transition-all duration-500 hover:text-purple-500" @click="scrollToSection('home')">
         Home
       </a>
