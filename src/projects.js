@@ -3,7 +3,7 @@ export default [
     alt: 'GanttHub',
     src: './projetos/gantthub.png',
     name: 'Gantt Hub',
-    repo: 'https://www.linkedin.com/posts/herbert-duarte-8534b71a2_vuejs-quasarframework-nestjs-activity-7147697683078582272-tIN4?utm_source=share&utm_medium=member_desktop',
+    repo: null,
     link: 'https://gantthub.pmvc.ba.gov.br/login',
   },
   {
@@ -45,7 +45,7 @@ export default [
     alt: 'Gestor Escolar PMVC',
     src: './projetos/gestor-escolar.png',
     name: 'Gestor Escolar PMVC',
-    repo: 'https://github.com/HerbertDuarte/teste-dev-cti',
+    repo: 'https://www.linkedin.com/posts/herbert-duarte-8534b71a2_vuejs-quasarframework-nestjs-activity-7147697683078582272-tIN4?utm_source=share&utm_medium=member_desktop',
     link: 'https://gestor-escolar-pmvc.vercel.app/',
   },
 ];
