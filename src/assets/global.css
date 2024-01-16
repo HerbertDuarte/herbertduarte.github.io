@@ -66,6 +66,9 @@ section{
 }
 
 @media screen and (max-width: 768px) {
+  body{
+    font-size: 1.05rem;
+   }
   main{
     padding: 0 1rem 1rem 1rem;
   }
