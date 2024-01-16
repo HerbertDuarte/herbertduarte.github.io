@@ -1,5 +1,5 @@
 <script setup>
-import Swiper from '@/components/Swiper.vue';
+import SwiperComponent from '@/components/SwiperComponent.vue';
 import ViewTitle from '@/components/ViewTitle.vue';
 import { FolderClosedIcon, FolderLockIcon, Laptop2Icon } from 'lucide-vue-next';
 
@@ -55,7 +55,7 @@ const projects = [
     </p>
     <p></p>
     <div class="flex flex-col justify-center items-start">
-      <Swiper />
+      <SwiperComponent />
       <div class="py-6 flex-1">
         <ul>
           <li class="py-1.5" :key="index" v-for="(project, index) in projects">

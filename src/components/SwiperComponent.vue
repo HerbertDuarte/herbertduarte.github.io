@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col justify-center items-center gap-4">
-    <div class="border-4 rounded-xl border-purple-800 overflow-hidden">
+  <div class="flex flex-col justify-center items-center md:gap-4 gap-2">
+    <div class="md:border-4 border-2 rounded-xl border-purple-800 overflow-hidden">
       <div
         id="slider-container"
         ref="sliderContainer"
@@ -29,8 +29,9 @@
     </div>
     <div class="gap-1 flex justify-center items-center">
       <div
+        :key="index"
         v-for="(image, index) in images"
-        :class="`w-3 h-3 rounded-full ${
+        :class="`md:w-3 md:h-3 w-2.5 h-2.5 rounded-full ${
           index === currentSlideIndex ? 'bg-purple-500' : ' bg-purple-950'
         }`"
       />

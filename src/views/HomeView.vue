@@ -3,7 +3,7 @@ import { ChevronsDown } from 'lucide-vue-next';
 import ViewTitle from '@/components/ViewTitle.vue';
 </script>
 <template>
-  <section id="home" class="pt-36">
+  <section id="home" class="md:pt-36 pt-28">
     <ViewTitle>
       Olá, eu me chamo <span class="text-purple-600">Herbert</span>. Seja bem
       vindo(a) à minha página de portifólio.

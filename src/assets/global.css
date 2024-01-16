@@ -31,8 +31,11 @@ html {
 }
 body{
  background : #080808;
- color: #eee;
+ color: #dbdbdb;
  font-size: 1.1rem;
+}
+body h2{
+  color: #dbdbdbd8;
 }
 #app {
   font-family: 'Chakra Petch', sans-serif;
@@ -40,7 +43,6 @@ body{
 
 #header{
   background-color: #080808;
-  padding: 0 3rem;
 }
 
 #footer{
@@ -67,10 +69,7 @@ section{
   main{
     padding: 0 1rem 1rem 1rem;
   }
-  #header{
-    padding: 0 1rem;
-  }
   #footer{
-    padding: 0 1rem;
+    padding: 0 1rem 2rem 1rem;
   }
 }

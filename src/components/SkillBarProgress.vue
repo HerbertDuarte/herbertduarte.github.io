@@ -40,7 +40,7 @@ onBeforeMount(() => {
     <div class="flex">
       <span v-if="level === 1" :class="`h-2.5 basis-[20%] bg-purple-500`" />
       <span v-if="level === 2" :class="`h-2.5 basis-[50%] bg-purple-500`" />
-      <span v-if="level === 3" :class="`h-2.5 basis-[90%] bg-purple-500`" />
+      <span v-if="level === 3" :class="`h-2.5 basis-[95%] bg-purple-500`" />
       <span v-if="level === 4" :class="`h-2.5 basis-[100%] bg-purple-500`" />
       <span class="h-2.5 flex-1 bg-zinc-800" />
     </div>
