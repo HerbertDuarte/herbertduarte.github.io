@@ -15,7 +15,7 @@ import FormEmail from '@/components/FormEmail.vue';
     class="flex justify-center items-center border-t border-zinc-700"
   >
     <div
-      class="w-full flex lg:flex-row flex-col justify-center items-start gap-12 lg:gap-10 max-w-5xl"
+      class="w-full flex lg:flex-row flex-col justify-center items-start gap-12 lg:gap-10 max-w-5xl py-3"
     >
       <div class="flex-1">
         <h3 class="text-xl font-medium py-3">Contatos</h3>
