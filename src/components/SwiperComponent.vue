@@ -11,7 +11,7 @@
           id="slider"
           ref="slider"
           :style="`width : 100%; max-width: ${
-            imageWidth * images.length
+            imageWidth * projects.length
           }; transition: transform 0.5s ease; transform: translateX(-${
             currentSlideIndex * rawImageWidth
           }px);`"
@@ -19,7 +19,7 @@
         >
           <img
             :key="index"
-            v-for="(image, index) in images"
+            v-for="(image, index) in projects"
             class="object-cover"
             :src="image.src"
             :alt="image.alt"
@@ -30,7 +30,7 @@
     <div class="gap-1 flex justify-center items-center">
       <div
         :key="index"
-        v-for="(image, index) in images"
+        v-for="(image, index) in projects"
         :class="`md:w-3 md:h-3 w-2.5 h-2.5 rounded-full ${
           index === currentSlideIndex ? 'bg-purple-500' : ' bg-purple-950'
         }`"
@@ -41,46 +41,17 @@
 
 <script setup>
 import { onBeforeUnmount, onMounted, ref } from 'vue';
-
+import projects from '@/projects';
 const sliderContainer = ref(document.getElementById('slider-container'));
 const slider = ref(document.getElementById('slider'));
 const rawImageWidth = ref(1024);
 const imageWidth = ref(`${rawImageWidth.value}px`);
 const currentSlideIndex = ref(0);
 // NO NOTEBOOK O INSPECIONAR PRECISOU TER LARGURA DE 1400PX PARA FICAR NA PROPORÇÃO CORRETA
-const images = ref([
-  {
-    alt: 'GanttHub',
-    src: './projetos/gantthub.png',
-  },
-  {
-    alt: 'Portifólio Maria Beatriz',
-    src: './projetos/portbia.png',
-  },
-  {
-    alt: 'Landing Page Ana Clara',
-    src: './projetos/ana-clara.png',
-  },
-  {
-    alt: 'Pokedex',
-    src: './projetos/pokedex.png',
-  },
-  {
-    alt: 'Todo List',
-    src: './projetos/todo.png',
-  },
-  {
-    alt: 'Mini Blog',
-    src: './projetos/mini-blog.png',
-  },
-  {
-    alt: 'Gestor Escolar PMVC',
-    src: './projetos/gestor-escolar.png',
-  },
-]);
+
 function slideLoop() {
   setInterval(() => {
-    if (currentSlideIndex.value < images.value.length - 1) {
+    if (currentSlideIndex.value < projects.value.length - 1) {
       currentSlideIndex.value++;
     } else {
       currentSlideIndex.value = 0;
