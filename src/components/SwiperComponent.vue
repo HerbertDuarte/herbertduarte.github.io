@@ -51,7 +51,7 @@ const currentSlideIndex = ref(0);
 
 function slideLoop() {
   setInterval(() => {
-    if (currentSlideIndex.value < projects.value.length - 1) {
+    if (currentSlideIndex.value < projects.length - 1) {
       currentSlideIndex.value++;
     } else {
       currentSlideIndex.value = 0;
