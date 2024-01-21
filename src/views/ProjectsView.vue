@@ -26,6 +26,7 @@ import projects from '@/projects';
               v-if="project.repo"
               class="hover:text-purple-300 text-purple-600 transition-all duration-500"
               :href="project.repo"
+              target="_blank"
             >
               <FolderClosedIcon
                 :stroke-width="2.2"
