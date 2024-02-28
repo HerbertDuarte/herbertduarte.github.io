@@ -7,7 +7,7 @@ import projects from '@/projects.json';
 <template>
   <section id="projects">
     <ViewTitle> Projetos </ViewTitle>
-    <p class="py-10">
+    <p class="pt-10 pb-2">
       <Laptop2Icon
         :stroke-width="2.2"
         :size="32"
