@@ -71,16 +71,18 @@ const items2 = ref([
       envolvendo tanto o desenvolvimento front-end quanto o back-end.
     </p>
     <div class="flex lg:flex-row flex-col lg:gap-8 gap-0">
-      <div class="flex-1">
+      <div class="flex-1 overflow-hidden">
         <SkillBarProgress
-          v-for="item in items1"
+          v-for="(item, index) in items1"
+          :key="index"
           :name="item.name"
           :level="item.level"
         />
       </div>
-      <div class="flex-1">
+      <div class="flex-1 overflow-hidden">
         <SkillBarProgress
-          v-for="item in items2"
+          v-for="(item, index) in items2"
+          :key="index"
           :name="item.name"
           :level="item.level"
         />

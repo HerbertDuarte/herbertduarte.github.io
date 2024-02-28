@@ -1,4 +1,5 @@
 <script setup>
+import { useMotion } from '@vueuse/motion';
 import { onBeforeMount, ref } from 'vue';
 
 const props = defineProps({
@@ -13,6 +14,8 @@ const props = defineProps({
 });
 
 const levelLabel = ref('Intermediário');
+const skilBarRef = ref();
+
 
 onBeforeMount(() => {
   switch (props.level) {
@@ -30,6 +33,22 @@ onBeforeMount(() => {
       break;
   }
 });
+
+
+useMotion(skilBarRef, {
+  initial: {
+    x: -50,
+  },
+  visible: {
+    x : 0,
+    transition : {
+      ease:'linear',
+      duration : 350
+    }
+  },
+});
+
+
 </script>
 <template>
   <div class="py-1.5">
@@ -37,12 +56,26 @@ onBeforeMount(() => {
       <p>{{ name }}</p>
       <p class="text-purple-500">{{ levelLabel }}</p>
     </div>
-    <div class="flex">
-      <span v-if="level === 1" :class="`h-2.5 basis-[20%] bg-purple-500`" />
-      <span v-if="level === 2" :class="`h-2.5 basis-[50%] bg-purple-500`" />
-      <span v-if="level === 3" :class="`h-2.5 basis-[95%] bg-purple-500`" />
-      <span v-if="level === 4" :class="`h-2.5 basis-[100%] bg-purple-500`" />
-      <span class="h-2.5 flex-1 bg-zinc-800" />
+    <div class="flex bg-zinc-800">
+
+      <span ref="skilBarRef" class="h-2.5 flex-1 bg-purple-500" />
+      <span
+      
+        v-if="level === 1"
+        :class="`h-2.5 w-[80%]`"
+      />
+      <span
+        v-if="level === 2"
+        :class="`h-2.5 w-[50%]`"
+      />
+      <span
+        v-if="level === 3"
+        :class="`h-2.5 w-[5%]`"
+      />
+      <span
+        v-if="level === 4"
+        :class="`h-2.5 w-[0%]`"
+      />
     </div>
   </div>
 </template>

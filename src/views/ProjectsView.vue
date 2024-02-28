@@ -2,7 +2,7 @@
 import SwiperComponent from '@/components/SwiperComponent.vue';
 import ViewTitle from '@/components/ViewTitle.vue';
 import { FolderClosedIcon, FolderLockIcon, Laptop2Icon } from 'lucide-vue-next';
-import projects from '@/projects';
+import projects from '@/projects.json';
 </script>
 <template>
   <section id="projects">
