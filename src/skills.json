@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Vue 3",
+    "level": 3
+  },
+  {
+    "name": "React JS",
+    "level": 3
+  },
+  {
+    "name": "Node JS",
+    "level": 3
+  },
+  {
+    "name": "Prisma ORM",
+    "level": 3
+  },
+  {
+    "name": "Javascript e Typescript",
+    "level": 3
+  },
+  {
+    "name": "TailwindCSS",
+    "level": 3
+  },
+  {
+    "name": "Quasar Framework",
+    "level": 3
+  },
+  {
+    "name": "NestJS",
+    "level": 3
+  },
+  {
+    "name": "Express",
+    "level": 3
+  },
+  {
+    "name": "Next JS",
+    "level": 2
+  },
+  {
+    "name": "Git e GitHub/GitLab",
+    "level": 2
+  },
+  {
+    "name": "Inglês",
+    "level": 2
+  },
+  {
+    "name": "Java",
+    "level": 1
+  },
+  {
+    "name": "Spring Boot",
+    "level": 1
+  }
+]

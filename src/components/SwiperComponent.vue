@@ -79,7 +79,7 @@ const slider = ref(document.getElementById('slider'));
 const rawImageWidth = ref(1024);
 const imageWidth = ref(`${rawImageWidth.value}px`);
 const currentSlideIndex = ref(0);
-const autoplay = ref(true);
+const autoplay = ref(false);
 const slideInterval = ref(null);
 
 function externalPush(url) {
@@ -103,7 +103,7 @@ function previusPage() {
     autoplay.value = false;
   }
   if (currentSlideIndex.value <= 0) {
-    currentSlideIndex.value = projects.length -1 ;
+    currentSlideIndex.value = projects.length - 1;
   } else {
     currentSlideIndex.value--;
   }
@@ -122,9 +122,6 @@ function defineInterval() {
   }, 3000);
 }
 
-function slideLoop() {
-  slideInterval.value = defineInterval();
-}
 function resizeSlide() {
   fixImageWidth();
 }
@@ -143,8 +140,8 @@ watch(autoplay, (newValue) => {
 
 onMounted(() => {
   setTimeout(() => {
-    slideLoop();
     fixImageWidth();
+    autoplay.value = true;
   }, 1000);
 
   window.addEventListener('resize', resizeSlide);

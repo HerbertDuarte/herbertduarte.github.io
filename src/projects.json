@@ -21,11 +21,11 @@
     "link": "https://anaclara-model.vercel.app/"
   },
   {
-    "alt": "Pokedex",
-    "src": "./projetos/pokedex.png",
-    "name": "Pokedex",
-    "repo": "https://github.com/HerbertDuarte/pokedex",
-    "link": "https://herbertduarte.github.io/pokedex/"
+    "alt": "Minder App",
+    "src": "./projetos/minder-app.png",
+    "name": "Minder App",
+    "repo": "https://github.com/HerbertDuarte?tab=repositories&q=minder-app&type=&language=&sort=",
+    "link": "https://minder-app-vert.vercel.app/"
   },
   {
     "alt": "Todo List",
@@ -33,6 +33,20 @@
     "name": "To Do List",
     "repo": "https://github.com/HerbertDuarte/to-do-list",
     "link": "https://herbertduarte.github.io/to-do-list/"
+  },
+  {
+    "alt": "Vue Coins",
+    "src": "./projetos/vue-coins.png",
+    "name": "Vue Coins",
+    "repo": "https://github.com/HerbertDuarte/youtube",
+    "link": "https://vue-coins.vercel.app/"
+  },
+  {
+    "alt": "Over Clock Store",
+    "src": "./projetos/oc-store.png",
+    "name": "Over Clock Store",
+    "repo": "https://github.com/HerbertDuarte/oc-store",
+    "link": "https://overclock-store.vercel.app/"
   },
   {
     "alt": "Mini Blog",

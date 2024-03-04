@@ -3,60 +3,26 @@ import SkillBarProgress from '@/components/SkillBarProgress.vue';
 import ViewTitle from '@/components/ViewTitle.vue';
 import { BrainIcon } from 'lucide-vue-next';
 import { ref } from 'vue';
+import skills from '@/skills.json';
 
-const items1 = ref([
-  {
-    name: 'Vue 3',
-    level: 3,
-  },
-  {
-    name: 'React JS',
-    level: 3,
-  },
-  {
-    name: 'Node JS',
-    level: 3,
-  },
-  {
-    name: 'Prisma ORM',
-    level: 3,
-  },
-  {
-    name: 'Javascript e Typescript',
-    level: 3,
-  },
-  {
-    name: 'TailwindCSS',
-    level: 3,
-  },
-]);
+function divideArray(array) {
+  const firstArrayLength =
+    array.length % 2 === 0 ? array.length / 2 : Math.ceil(array.length / 2);
 
-const items2 = ref([
-  {
-    name: 'Quasar Framework',
-    level: 3,
-  },
-  {
-    name: 'NestJS',
-    level: 3,
-  },
-  {
-    name: 'Next 13',
-    level: 2,
-  },
-  {
-    name: 'Express',
-    level: 2,
-  },
-  {
-    name: 'Git e GitHub/GitLab',
-    level: 2,
-  },
-  {
-    name: 'Inglês',
-    level: 1,
-  },
-]);
+  let firstArray = [];
+  let secondArray = [];
+
+  for (let i = 0; i < firstArrayLength - 0; i++) {
+    firstArray.push(array[i]);
+  }
+  for (let i = firstArrayLength; i < array.length - 0; i++) {
+    secondArray.push(array[i]);
+  }
+
+  return [firstArray, secondArray];
+}
+
+const skillsArrays = ref(divideArray(skills));
 </script>
 <template>
   <section id="skills">
@@ -73,7 +39,7 @@ const items2 = ref([
     <div class="flex lg:flex-row flex-col lg:gap-8 gap-0">
       <div class="flex-1 overflow-hidden">
         <SkillBarProgress
-          v-for="(item, index) in items1"
+          v-for="(item, index) in skillsArrays[0]"
           :key="index"
           :name="item.name"
           :level="item.level"
@@ -81,7 +47,7 @@ const items2 = ref([
       </div>
       <div class="flex-1 overflow-hidden">
         <SkillBarProgress
-          v-for="(item, index) in items2"
+          v-for="(item, index) in skillsArrays[1]"
           :key="index"
           :name="item.name"
           :level="item.level"
