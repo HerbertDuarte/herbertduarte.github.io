@@ -6,6 +6,29 @@ const mobileMenu = ref(null);
 const header = ref(null);
 const menuButton = ref(null);
 
+const links = ref([
+  {
+    name : "Home",
+    path: "home"
+  },
+  {
+    name : "Sobre mim",
+    path: "about"
+  },
+  {
+    name : "Habilidades",
+    path: "skills"
+  },
+  {
+    name : "Projetos",
+    path: "projects"
+  },
+  {
+    name : "Contatos",
+    path: "footer"
+  },
+])
+
 function scrollToSection (sectionId){
   const element = document.getElementById(sectionId);
   if (element) {
@@ -51,33 +74,15 @@ onMounted(()=>{
       />
     </nav>
     <nav class="md:flex hidden justify-center items-center pr-6 gap-4">
-      <a class="cursor-pointer transition-all duration-500 hover:text-purple-500" @click="scrollToSection('home')">
-        Home
-      </a>
-      <a class="cursor-pointer transition-all duration-500 hover:text-purple-500" @click="scrollToSection('about')">
-        Sobre mim
-      </a>
-      <a class="cursor-pointer transition-all duration-500 hover:text-purple-500" @click="scrollToSection('skills')">
-        Habilidades
-      </a>
-      <a class="cursor-pointer transition-all duration-500 hover:text-purple-500" @click="scrollToSection('projects')">
-        Projetos
+      <a :key="index" v-for="(item, index) in links" class="cursor-pointer transition-all duration-500 hover:text-purple-500" @click="scrollToSection(item.path)">
+        {{ item.name }}
       </a>
     </nav>
   </div>
   </header>
   <nav ref="mobileMenu" :class="`md:hidden flex fixed z-40 top-16 left-0 p-8 pt-2 justify-center items-center w-full bg-[#080808] flex-col gap-5 text-zinc-100 transition-all duration-500 border-b border-zinc-800 ${menuIsOpen ? 'translate-y-[0]' : 'translate-y-[-100vh]'}`">
-      <a  class="cursor-pointer transition-all duration-500 hover:text-purple-500" @click="scrollToSection('home')">
-        Home
-      </a>
-      <a class="cursor-pointer transition-all duration-500 hover:text-purple-500" @click="scrollToSection('about')">
-        Sobre mim
-      </a>
-      <a class="cursor-pointer transition-all duration-500 hover:text-purple-500" @click="scrollToSection('skills')">
-        Habilidades
-      </a>
-      <a class="cursor-pointer transition-all duration-500 hover:text-purple-500" @click="scrollToSection('projects')">
-        Projetos
+      <a  :key="index" v-for="(item, index) in links" class="cursor-pointer transition-all duration-500 hover:text-purple-500" @click="scrollToSection(item.path)">
+        {{ item.name }}
       </a>
     </nav>
 </template>
