@@ -26,7 +26,7 @@ import { Download, UserRoundPlusIcon } from 'lucide-vue-next';
         src="/herbert.png"
         alt="Foto de perfil de Herbert Duarte"
       />
-      <a href="/public/donwloads/Currículo-Herbert_Duarte.pdf" download class="flex items-center gap-1.5 hover:text-purple-500 group mt-5 pr-2">
+      <a href="/donwloads/cv-herbert-duarte.pdf" download="Currículo-Herbert_Duarte.pdf" class="flex items-center gap-1.5 hover:text-purple-500 group mt-5 pr-2">
         <Download class="text-purple-500 pb-0.5 "/>
         <p class="group-hover:underline">
           Donwload CV
