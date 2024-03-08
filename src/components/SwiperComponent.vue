@@ -35,7 +35,7 @@
         id="slider-container"
         ref="sliderContainer"
         :style="`width : 100%; max-width: ${imageWidth}; overflow-x: hidden;`"
-        class="rounded-md  overflow-hidden"
+        class="rounded-md"
       >
         <div
           id="slider"
@@ -53,7 +53,6 @@
             v-for="(image, index) in projects"
             :src="image.src"
             :alt="image.alt"
-            :style="`width: ${rawImageWidth}px`"
           />
         </div>
       </div>
