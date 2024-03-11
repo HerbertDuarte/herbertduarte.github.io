@@ -43,7 +43,7 @@
           :style="`width : 100%; max-width: ${
             imageWidth * projects.length
           }; transition: transform 0.5s ease; transform: translateX(-${
-            currentSlideIndex * rawImageWidth 
+            currentSlideIndex * rawImageWidth
           }px);`"
           class="flex cursor-pointer"
         >
@@ -149,5 +149,6 @@ onMounted(() => {
 });
 onBeforeUnmount(() => {
   window.removeEventListener('resize', resizeSlide);
+  clearInterval(slideInterval.value);
 });
 </script>
