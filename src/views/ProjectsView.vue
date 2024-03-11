@@ -18,7 +18,7 @@ import projects from '@/projects.json';
     </p>
     <p></p>
     <div class="flex flex-col justify-center items-start">
-      <SwiperComponent />
+      <SwiperComponent /> 
       <div class="py-6 flex-1">
         <ul>
           <li class="py-1.5" :key="index" v-for="(project, index) in projects">

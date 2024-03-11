@@ -43,7 +43,7 @@
           :style="`width : 100%; max-width: ${
             imageWidth * projects.length
           }; transition: transform 0.5s ease; transform: translateX(-${
-            currentSlideIndex * rawImageWidth
+            currentSlideIndex * rawImageWidth 
           }px);`"
           class="flex cursor-pointer"
         >
@@ -53,6 +53,7 @@
             v-for="(image, index) in projects"
             :src="image.src"
             :alt="image.alt"
+            :style="`object-fit: cover`"
           />
         </div>
       </div>
@@ -76,7 +77,7 @@ import projects from '@/projects';
 import { ChevronLeft, ChevronRight } from 'lucide-vue-next';
 const sliderContainer = ref(document.getElementById('slider-container'));
 const slider = ref(document.getElementById('slider'));
-const rawImageWidth = ref(1024);
+const rawImageWidth = ref(1020);
 const imageWidth = ref(`${rawImageWidth.value}px`);
 const currentSlideIndex = ref(0);
 const autoplay = ref(false);
@@ -126,7 +127,7 @@ function resizeSlide() {
   fixImageWidth();
 }
 function fixImageWidth() {
-  rawImageWidth.value = slider.value.offsetWidth;
+  rawImageWidth.value = slider.value.getBoundingClientRect().width.toFixed(2);
 }
 
 watch(autoplay, (newValue) => {

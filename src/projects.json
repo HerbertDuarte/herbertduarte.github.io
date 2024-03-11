@@ -52,14 +52,14 @@
     "alt": "Mini Blog",
     "src": "./projetos/mini-blog.png",
     "name": "Mini Blog (React+Firebase)",
-    "repo": "https://github.com/HerbertDuarte/mini-blog",
-    "link": "https://mini-blog-snowy.vercel.app/"
+    "repo": "https://github.com/HerbertDuarte?tab=repositories&q=teste-dev-cti&type=&language=&sort=",
+    "link": "https://gestor-escolar-pmvc.vercel.app/"
   },
   {
-    "alt": "Gestor Escolar PMVC",
-    "src": "./projetos/gestor-escolar.png",
-    "name": "Gestor Escolar PMVC",
-    "repo": "https://www.linkedin.com/posts/herbert-duarte-8534b71a2_vuejs-quasarframework-nestjs-activity-7147697683078582272-tIN4?utm_source=share&utm_medium=member_desktop",
-    "link": "https://gestor-escolar-pmvc.vercel.app/"
+    "alt": "Live - Fundamentos do Vue 3",
+    "src": "./projetos/live-vue.jpg",
+    "name": "Live - Fundamentos do Vue 3",
+    "repo": "https://github.com/HerbertDuarte/curso_vue3_2024",
+    "link": "https://www.youtube.com/watch?v=Enqjp5hXsV8&t=2924s"
   }
 ]
