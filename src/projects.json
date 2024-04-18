@@ -1,5 +1,6 @@
 [
   {
+    "id": null,
     "alt": "GanttHub",
     "src": "./projetos/gantthub.png",
     "name": "Gantt Hub",
@@ -7,6 +8,7 @@
     "link": "https://gantthub.pmvc.ba.gov.br/login"
   },
   {
+    "id": null,
     "alt": "Portifólio Maria Beatriz",
     "src": "./projetos/portbia.png",
     "name": "Portifólio Maria Beatriz",
@@ -14,6 +16,7 @@
     "link": "https://portbia.netlify.app/"
   },
   {
+    "id": null,
     "alt": "Landing Page Ana Clara",
     "src": "./projetos/ana-clara.png",
     "name": "Landing Page Ana Clara",
@@ -21,6 +24,7 @@
     "link": "https://anaclara-model.vercel.app/"
   },
   {
+    "id": null,
     "alt": "Minder App",
     "src": "./projetos/minder-app.png",
     "name": "Minder App",
@@ -28,6 +32,7 @@
     "link": "https://minder-app-vert.vercel.app/"
   },
   {
+    "id": null,
     "alt": "Todo List",
     "src": "./projetos/todo.png",
     "name": "To Do List",
@@ -35,6 +40,7 @@
     "link": "https://herbertduarte.github.io/to-do-list/"
   },
   {
+    "id": null,
     "alt": "Vue Coins",
     "src": "./projetos/vue-coins.png",
     "name": "Vue Coins",
@@ -42,6 +48,7 @@
     "link": "https://vue-coins.vercel.app/"
   },
   {
+    "id": null,
     "alt": "Over Clock Store",
     "src": "./projetos/oc-store.png",
     "name": "Over Clock Store",
@@ -49,6 +56,7 @@
     "link": "https://overclock-store.vercel.app/"
   },
   {
+    "id": null,
     "alt": "Mini Blog",
     "src": "./projetos/mini-blog.png",
     "name": "Mini Blog (React+Firebase)",
@@ -56,6 +64,7 @@
     "link": "https://gestor-escolar-pmvc.vercel.app/"
   },
   {
+    "id": null,
     "alt": "Live - Fundamentos do Vue 3",
     "src": "./projetos/live-vue.jpg",
     "name": "Live - Fundamentos do Vue 3",

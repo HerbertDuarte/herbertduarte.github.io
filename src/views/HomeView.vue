@@ -5,7 +5,7 @@ import ViewTitle from '@/components/ViewTitle.vue';
 <template>
   <section id="home" class="md:pt-36 pt-28">
     <ViewTitle>
-      Olá, eu me chamo <span class="text-purple-600">Herbert</span>. Seja bem
+      Olá, eu me chamo <span class="text-primary">Herbert</span>. Seja bem
       vindo(a) à minha página de portifólio.
     </ViewTitle>
     <p class="py-12">
@@ -15,7 +15,7 @@ import ViewTitle from '@/components/ViewTitle.vue';
       repositórios.
     </p>
     <a href="#about" class="flex justify-center items-center animate-bounce">
-      <ChevronsDown :size="56" class="text-purple-600" />
+      <ChevronsDown :size="56" class="text-primary" />
     </a>
   </section>
 </template>

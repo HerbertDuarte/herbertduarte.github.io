@@ -4,7 +4,9 @@
 ::-webkit-scrollbar {
   width: 10px;
 }
-
+.asd{
+  color: #a855f7;
+}
 /* Track */
 ::-webkit-scrollbar-track {
   background: #080808;
