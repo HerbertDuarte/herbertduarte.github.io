@@ -60,8 +60,8 @@
     "alt": "Mini Blog",
     "src": "./projetos/mini-blog.png",
     "name": "Mini Blog (React+Firebase)",
-    "repo": "https://github.com/HerbertDuarte?tab=repositories&q=teste-dev-cti&type=&language=&sort=",
-    "link": "https://gestor-escolar-pmvc.vercel.app/"
+    "repo": "https://github.com/HerbertDuarte/mini-blog",
+    "link": "https://mini-blog-snowy.vercel.app/"
   },
   {
     "id": null,
@@ -69,6 +69,6 @@
     "src": "./projetos/live-vue.jpg",
     "name": "Live - Fundamentos do Vue 3",
     "repo": "https://github.com/HerbertDuarte/curso_vue3_2024",
-    "link": "https://www.youtube.com/watch?v=Enqjp5hXsV8&t=1340s"
+    "link": "https://www.youtube.com/watch?v=Enqjp5hXsV8"
   }
 ]
