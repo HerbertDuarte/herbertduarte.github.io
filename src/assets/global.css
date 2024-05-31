@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
 
+:root {
+  --light-primary: #ff6c6c;
+  --primary: #8b1a1a;
+  --secondary: #202020;
+  --dark-primary: #570707;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
-}
-.asd{
-  color: #a855f7;
 }
 /* Track */
 ::-webkit-scrollbar-track {
@@ -19,7 +23,7 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #9333EA;
+  background: var(--primary);
 }
 
 * {
@@ -31,50 +35,125 @@
 html {
   scroll-behavior: smooth;
 }
-body{
- background : #080808;
- color: #dbdbdb;
- font-size: 1.1rem;
+body {
+  background: #080808;
+  color: #dbdbdb;
+  font-size: 1.1rem;
 }
-body h2{
+body h2 {
   color: #dbdbdbd8;
 }
 #app {
   font-family: 'Chakra Petch', sans-serif;
 }
 
-#header{
+#header {
   background-color: #080808;
 }
 
-#footer{
+#footer {
   background-color: #080808;
   padding: 0 3rem;
-
 }
-main{
- padding: 0 3rem 3rem 3rem;
- display: flex;
- flex-direction: column;
- justify-content: flex-start;
- align-items: center;
- gap: 3rem;
+main {
+  padding: 0 3rem 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
 }
 
-section{
+section {
   width: 100%;
   max-width: 64rem;
   padding-top: 5rem;
 }
 
 @media screen and (max-width: 768px) {
-  body{
+  body {
     font-size: 1.05rem;
-   }
-  main{
+  }
+  main {
     padding: 0 1rem 1rem 1rem;
   }
-  #footer{
+  #footer {
     padding: 0 1rem 2rem 1rem;
   }
+}
+
+/* Genel stil */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  margin: 10px;
+}
+
+/* Giriş stil */
+.toggle-switch .toggle-input {
+  display: none;
+}
+
+/* Anahtarın stilinin etrafındaki etiketin stil */
+.toggle-switch .toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 24px;
+  background-color: #27272a;
+  border-radius: 34px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Anahtarın yuvarlak kısmının stil */
+.toggle-switch .toggle-label::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  background-color: #f7f7f7;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+/* Anahtarın etkin hale gelmesindeki stil değişiklikleri */
+.toggle-switch .toggle-input:checked + .toggle-label {
+  background-color: var(--primary);
+}
+
+.toggle-switch .toggle-input:checked + .toggle-label::before {
+  transform: translateX(16px);
+}
+
+/* Light tema */
+.toggle-switch.light .toggle-label {
+  background-color: #bebebe;
+}
+
+.toggle-switch.light .toggle-input:checked + .toggle-label {
+  background-color: #9b9b9b;
+}
+
+.toggle-switch.light .toggle-input:checked + .toggle-label::before {
+  transform: translateX(6px);
+}
+
+/* Dark tema */
+.toggle-switch.dark .toggle-label {
+  background-color: #4b4b4b;
+}
+
+.toggle-switch.dark .toggle-input:checked + .toggle-label {
+  background-color: #717171;
+}
+
+.toggle-switch.dark .toggle-input:checked + .toggle-label::before {
+  transform: translateX(16px);
 }

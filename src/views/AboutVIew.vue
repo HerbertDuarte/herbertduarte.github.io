@@ -18,7 +18,7 @@ import { Download, UserRoundPlusIcon } from 'lucide-vue-next';
 
     <div class="flex flex-col gap-8 justify-center items-center">
       <img
-        class="w-80 aspect-square object-cover bg-primary rounded-full rounded-bl-[40rem] shadow-md shadow-primary/50"
+        class="w-80 aspect-square object-cover bg-secondary rounded-full rounded-bl-[40rem] shadow-md shadow-secondary/50"
         src="/herbert.png" alt="Foto de perfil de Herbert Duarte" />
       <a href="/donwloads/cv-herbert-duarte.pdf" download="Currículo Herbert Duarte.pdf"
         class="flex items-center gap-1.5 hover:text-primary group mt-5 pr-2">
