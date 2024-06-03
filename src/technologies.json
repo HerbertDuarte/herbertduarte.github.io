@@ -1,71 +1,61 @@
 [
   {
-    "id" : 1,
+    "id": 1,
     "name": "Vue 3",
     "level": 3
   },
   {
-    "id" : 2,
+    "id": 2,
     "name": "React JS",
     "level": 3
   },
   {
-    "id" : 3,
-    "name": "Node JS",
+    "id": 4,
+    "name": "Express JS",
     "level": 3
   },
   {
-    "id" : 4,
-    "name": "Prisma ORM",
-    "level": 3
-  },
-  {
-    "id" : 5,
+    "id": 5,
     "name": "Javascript e Typescript",
     "level": 3
   },
   {
-    "id" : 6,
+    "id": 6,
     "name": "TailwindCSS",
     "level": 3
   },
   {
-    "id" : 7,
+    "id": 7,
     "name": "Quasar Framework",
     "level": 3
   },
   {
-    "id" : 8,
+    "id": 8,
     "name": "Nest JS",
     "level": 3
   },
   {
-    "id" : 9,
-    "name": "Express",
-    "level": 3
+    "id": 3,
+    "name": "Angular JS",
+    "level": 2
   },
   {
-    "id" : 10,
+    "id": 10,
     "name": "Java",
-    "level": 3
+    "level": 2
   },
   {
-    "id" : 11,
+    "id": 11,
     "name": "Git e GitHub/GitLab",
     "level": 2
   },
   {
-    "id" : 12,
+    "id": 12,
     "name": "Spring Boot",
     "level": 2
   },
   {
-    "id" : 1,
-    "name": "Inglês",
-    "level": 2
-  },
-  {
-    "id" : 1,
+    "id": 12,
     "name": "Next JS",
     "level": 1
   }

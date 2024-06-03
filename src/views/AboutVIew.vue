@@ -9,11 +9,13 @@ import { Download, UserRoundPlusIcon } from 'lucide-vue-next';
     <p class="py-10 leading-8">
       <UserRoundPlusIcon :stroke-width="2.2" :size="32" class="inline text-primary pb-1.5" />
       Eu me chamo <span class="text-primary">Herbert Duarte</span>, sou
-      baiano, tenho 21 anos e resido atualmente no município de Vitória da
-      Conquista - BA. Sou um entusiasta da tecnologia, apaixonado por exatas e
+      baiano, tenho 21 anos e resido no município de Vitória da
+      Conquista, BA. Sou um entusiasta da tecnologia, apaixonado por exatas e
       estudante de programação. Estou matriculado no curso de Bacharelado em
       <span class="text-primary">Sistemas de Informação</span> no Instituto
-      Federal de Educação, Ciência e Tecnologia da Bahia (IFBA).
+      Federal de Educação, Ciência e Tecnologia da Bahia (IFBA). Atualmente atuo como Arquiteto de software e
+      Desenvolvedor fullstack
+      web.
     </p>
 
     <div class="flex flex-col gap-8 justify-center items-center">

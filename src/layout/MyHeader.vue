@@ -8,12 +8,12 @@ const menuButton = ref(null);
 
 const links = ref([
   {
-    name: "Home",
-    path: "home"
-  },
-  {
     name: "Sobre mim",
     path: "about"
+  },
+  {
+    name: "Tecnologias",
+    path: "technologies"
   },
   {
     name: "Habilidades",
@@ -59,9 +59,9 @@ onMounted(() => {
 <template>
   <header ref="header" id="header" class="flex md:p-6 p-0 justify-center items-center fixed top-[-2px] z-50 w-full ">
     <div class="flex justify-between items-center max-w-5xl w-full">
-      <div class="text-primary font-bold font-mono z-20 md:px-6 px-4">
+      <a href="#home" class="text-primary hover:text-light-primary font-bold font-mono z-20 md:px-6 px-4">
         {{ '</>' }}
-      </div>
+      </a>
       <nav ref="menuButton" class="md:hidden flex py-5 pl-7 pr-4 cursor-pointer">
         <MenuIcon v-if="!menuIsOpen" :size="26" />
         <XIcon v-if="menuIsOpen" :size="26" />
