@@ -2,7 +2,7 @@
 import SwiperComponent from '@/components/SwiperComponent.vue';
 import ViewTitle from '@/components/ViewTitle.vue';
 import { FolderClosedIcon, FolderLockIcon, Laptop2Icon } from 'lucide-vue-next';
-import projects from '@/projects.json';
+import projects from '@/data/projects.json';
 </script>
 <template>
   <section id="projects">
@@ -18,7 +18,7 @@ import projects from '@/projects.json';
       <div class="py-6 flex-1">
         <ul>
           <li class="py-1.5" :key="index" v-for="(project, index) in projects">
-            <a v-if="project.repo" class="hover:text-light-primary text-primary transition-all duration-500"
+            <a v-if="project.repo" class="hover:text-primary-light text-primary transition-all duration-500"
               :href="project.repo" target="_blank">
               <FolderClosedIcon :stroke-width="2.2" :size="32" class="pb-1.5 inline" target="_blank" />
             </a>

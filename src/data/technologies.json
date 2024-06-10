@@ -1,0 +1,62 @@
+[
+  {
+    "name": "React JS",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    "description": "biblioteca código aberto frontend web desenvolvida e mantida pelo Facebook para a construção de interfaces de usuário"
+  },
+  {
+    "name": "Vue 3",
+    "image": "https://vuejs.org/images/logo.png",
+    "description": "framework progressivo para a construção de interfaces de usuário"
+  },
+  {
+    "name": "Angular JS",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
+    "description": "framework frontend desenvolvido pelo Google para a construção de aplicações web dinâmicas"
+  },
+  {
+    "name": "Typescript",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+    "description": "linguagem de programação que é um superconjunto do JavaScript, desenvolvida pela Microsoft"
+  },
+  {
+    "name": "Docker",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+    "description": "plataforma para automação de implantação de aplicações em contêineres, permitindo a criação e gerenciamento de ambientes isolados"
+  },
+  {
+    "name": "Nest JS",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg",
+    "description": "framework para construção de aplicações server-side eficientes e escaláveis com Node.js"
+  },
+  {
+    "name": "Next JS",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+    "description": "framework React para a construção de aplicações web estáticas e dinâmicas com renderização no lado do servidor"
+  },
+  {
+    "name": "TailwindCSS",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    "description": "framework CSS utilitário para estilização rápida e eficiente"
+  },
+  {
+    "name": "Quasar Framework",
+    "image": "https://cdn.quasar.dev/logo-v2/svg/logo-dark.svg",
+    "description": "framework Vue.js para a criação de aplicativos responsivos"
+  },
+  {
+    "name": "Java",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+    "description": "linguagem de programação robusta e orientada a objetos, amplamente utilizada para desenvolvimento de aplicações empresariais"
+  },
+  {
+    "name": "Spring Boot",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg",
+    "description": "framework para a construção de aplicações Java baseadas em microserviços"
+  },
+  {
+    "name": "Git",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+    "description": "sistema de controle de versão distribuído para rastrear mudanças no código-fonte durante o desenvolvimento de software"
+  }
+]

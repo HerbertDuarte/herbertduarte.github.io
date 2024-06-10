@@ -41,7 +41,7 @@
 
 /* Anahtarın etkin hale gelmesindeki stil değişiklikleri */
 .toggle-switch .toggle-input:checked + .toggle-label {
-  background-color: #2554d4;
+  background-color: var(--primary);
 }
 
 .toggle-switch .toggle-input:checked + .toggle-label::before {

@@ -1,0 +1,55 @@
+[
+  {
+    "id": 5,
+    "name": "SOLID",
+    "level": 3
+  },
+  {
+    "id": 3,
+    "name": "Clean Architecture",
+    "level": 3
+  },
+
+  {
+    "id": 2,
+    "name": "Padrões de projeto",
+    "level": 3
+  },
+
+  {
+    "id": 5,
+    "name": "Programação orientada a objetos",
+    "level": 3
+  },
+  {
+    "id": 5,
+    "name": "Programação funcional",
+    "level": 3
+  },
+  {
+    "id": 5,
+    "name": "Git Flow",
+    "level": 3
+  },
+
+  {
+    "id": 4,
+    "name": "Desenvolvimento orientado por testes",
+    "level": 2
+  },
+  {
+    "id": 1,
+    "name": "Design Patterns",
+    "level": 2
+  },
+  {
+    "id": 4,
+    "name": "Desenvolvimento orientado por testes",
+    "level": 1
+  },
+  {
+    "id": 1,
+    "name": "Arquitetura de micro-serviços",
+    "level": 1
+  }
+]

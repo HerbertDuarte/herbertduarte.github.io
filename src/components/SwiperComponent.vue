@@ -1,13 +1,13 @@
 <template>
   <div class="flex flex-col justify-center items-center md:gap-4 gap-2">
     <div class="w-full flex justify-end items-center">
-      <p class="text-zinc-300 pb-px">automático</p>
+      <p class="pb-px">automático</p>
       <div class="toggle-switch">
         <input v-model="autoplay" class="toggle-input" id="toggle" type="checkbox" />
         <label class="toggle-label" for="toggle"></label>
       </div>
     </div>
-    <div class="md:border-4 border-2 rounded-xl border-dark-primary overflow-hidden relative">
+    <div class="md:border-4 border-2 rounded-xl border-primary-dark overflow-hidden relative">
       <button @click="previusPage"
         class="h-full px-4 absolute z-20 top-0 left-0 flex justify-center items-center hover:bg-black/10 transition-all duration-300">
         <ChevronLeft class="size-10 md:size-16 text-white/80 drop-shadow-lg shadow-black" />
@@ -36,7 +36,7 @@
 <script setup>
 import '../assets/toggle-button.css';
 import { onBeforeUnmount, onMounted, ref, watch } from 'vue';
-import projects from '@/projects';
+import projects from '@/data/projects';
 import { ChevronLeft, ChevronRight } from 'lucide-vue-next';
 const sliderContainer = ref(document.getElementById('slider-container'));
 const slider = ref(document.getElementById('slider'));

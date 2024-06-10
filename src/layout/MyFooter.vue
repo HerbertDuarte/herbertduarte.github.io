@@ -10,13 +10,8 @@ import {
 import FormEmail from '@/components/FormEmail.vue';
 </script>
 <template>
-  <footer
-    id="footer"
-    class="flex justify-center items-center border-t border-zinc-700"
-  >
-    <div
-      class="w-full flex lg:flex-row flex-col justify-center items-start gap-12 lg:gap-10 max-w-5xl py-3"
-    >
+  <footer id="footer" class="flex justify-center items-center border-t border-main-smooth">
+    <div class="w-full flex lg:flex-row flex-col justify-center items-start gap-12 lg:gap-10 max-w-5xl py-3">
       <div class="flex-1">
         <h3 class="text-xl font-medium py-3">Contatos</h3>
         <p>
@@ -26,19 +21,11 @@ import FormEmail from '@/components/FormEmail.vue';
 
         <div class="py-6 space-y-1">
           <p class="text-nowrap">
-            <Phone
-              :stroke-width="2.2"
-              :size="18"
-              class="inline text-white mr-1"
-            />
+            <Phone :stroke-width="2.2" :size="18" class="inline text-white mr-1" />
             (77) 99985-1621
           </p>
           <p class="text-nowrap">
-            <MailIcon
-              :stroke-width="2.2"
-              :size="18"
-              class="inline text-white mr-1"
-            />
+            <MailIcon :stroke-width="2.2" :size="18" class="inline text-white mr-1" />
             herbertduarte.santos@gmail.com
           </p>
         </div>
@@ -54,45 +41,23 @@ import FormEmail from '@/components/FormEmail.vue';
 
         <div class="py-4 flex gap-2">
           <div>
-            <a
-              href="https://www.linkedin.com/in/herbert-duarte-8534b71a2/"
-              target="_blank"
-            >
-              <LinkedinIcon
-                :stroke-width="2.2"
-                :size="32"
-                class="pb-1.5 inline"
-              />
+            <a href="https://www.linkedin.com/in/herbert-duarte-8534b71a2/" target="_blank">
+              <LinkedinIcon :stroke-width="2.2" :size="32" class="pb-1.5 inline" />
             </a>
           </div>
           <div>
             <a href="https://github.com/HerbertDuarte" target="_blank">
-              <GithubIcon
-                :stroke-width="2.2"
-                :size="32"
-                class="pb-1.5 inline"
-              />
+              <GithubIcon :stroke-width="2.2" :size="32" class="pb-1.5 inline" />
             </a>
           </div>
           <div>
             <a href="https://www.instagram.com/herbert.14_/" target="_blank">
-              <InstagramIcon
-                :stroke-width="2.2"
-                :size="32"
-                class="pb-1.5 inline"
-              />
+              <InstagramIcon :stroke-width="2.2" :size="32" class="pb-1.5 inline" />
             </a>
           </div>
           <div>
-            <a
-              href="https://www.youtube.com/channel/UCT59PMPjgWLvLUzpxYq9tkg"
-              target="_blank"
-            >
-              <YoutubeIcon
-                :stroke-width="2.2"
-                :size="32"
-                class="pb-1.5 inline"
-              />
+            <a href="https://www.youtube.com/channel/UCT59PMPjgWLvLUzpxYq9tkg" target="_blank">
+              <YoutubeIcon :stroke-width="2.2" :size="32" class="pb-1.5 inline" />
             </a>
           </div>
         </div>

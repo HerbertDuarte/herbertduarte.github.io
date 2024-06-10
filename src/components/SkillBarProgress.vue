@@ -56,7 +56,7 @@ useMotion(skilBarRef, {
       <p>{{ name }}</p>
       <p class="text-primary">{{ levelLabel }}</p>
     </div>
-    <div class="flex bg-zinc-800">
+    <div class="flex bg-main-smooth">
 
       <span ref="skilBarRef" class="h-2.5 flex-1 bg-primary" />
       <span v-if="level === 1" :class="`h-2.5 w-[80%]`" />
