@@ -4,15 +4,10 @@
     "name": "SOLID",
     "level": 3
   },
-  {
-    "id": 3,
-    "name": "Clean Architecture",
-    "level": 3
-  },
 
   {
     "id": 2,
-    "name": "Padrões de projeto",
+    "name": "Design patterns",
     "level": 3
   },
 
@@ -31,6 +26,11 @@
     "name": "Git Flow",
     "level": 3
   },
+  {
+    "id": 3,
+    "name": "Clean Architecture",
+    "level": 2
+  },
 
   {
     "id": 4,
@@ -39,7 +39,7 @@
   },
   {
     "id": 1,
-    "name": "Design Patterns",
+    "name": "Inglês",
     "level": 2
   },
   {
