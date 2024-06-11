@@ -43,11 +43,6 @@
     "level": 2
   },
   {
-    "id": 4,
-    "name": "Desenvolvimento orientado por testes",
-    "level": 1
-  },
-  {
     "id": 1,
     "name": "Arquitetura de micro-serviços",
     "level": 1
