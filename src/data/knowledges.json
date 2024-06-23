@@ -31,7 +31,11 @@
     "name": "Clean Architecture",
     "level": 2
   },
-
+  {
+    "id": 3,
+    "name": "Arquitetura hexagonal",
+    "level": 2
+  },
   {
     "id": 4,
     "name": "Desenvolvimento orientado por testes",
@@ -40,7 +44,7 @@
   {
     "id": 1,
     "name": "Inglês",
-    "level": 2
+    "level": 1
   },
   {
     "id": 1,
