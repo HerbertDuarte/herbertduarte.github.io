@@ -40,13 +40,6 @@ onMounted(() => {
       <img
         class="w-80 aspect-square object-cover bg-secondary rounded-full rounded-bl-[40rem] shadow-md shadow-secondary/50"
         src="/herbert.png" alt="Foto de perfil de Herbert Duarte" />
-      <!-- <a href="/donwloads/cv-herbert-duarte.pdf" download="Currículo Herbert Duarte.pdf"
-        class="flex items-center gap-1.5 hover:text-primary group mt-5 pr-2">
-        <DownloadIcon class="text-primary pb-0.5 " />
-        <p class="group-hover:underline">
-          Donwload CV
-        </p>
-      </a> -->
 
       <button ref="button" @click="handleClick" class="relative px-4 py-2.5 flex justify-center">
 
