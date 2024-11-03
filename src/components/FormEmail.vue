@@ -16,7 +16,7 @@ const message = ref('');
     <div class="space-y-4">
 
       <textarea type="text" name="content" v-model="message" required placeholder="Digite uma mensagem"
-        class="w-full resize-none h-40 rounded-md bg-main-smooth p-2 disabled:opacity-50 disabled:cursor-not-allowed"></textarea>
+        class="placeholder:text-main-dark w-full resize-none h-40 rounded-md bg-main-smooth p-2 disabled:opacity-50 disabled:cursor-not-allowed"></textarea>
     </div>
   </form>
 </template>

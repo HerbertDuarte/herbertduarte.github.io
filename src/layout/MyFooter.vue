@@ -21,11 +21,11 @@ import FormEmail from '@/components/FormEmail.vue';
 
         <div class="py-6 space-y-1">
           <p class="text-nowrap">
-            <Phone :stroke-width="2.2" :size="18" class="inline text-white mr-1" />
+            <Phone :stroke-width="2.2" :size="18" class="inline text-letter mr-1" />
             (77) 99985-1621
           </p>
           <p class="text-nowrap">
-            <MailIcon :stroke-width="2.2" :size="18" class="inline text-white mr-1" />
+            <MailIcon :stroke-width="2.2" :size="18" class="inline text-letter mr-1" />
             herbertduarte.santos@gmail.com
           </p>
         </div>

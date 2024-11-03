@@ -3,69 +3,32 @@
     <div class="w-full flex justify-end items-center">
       <p class="pb-px">automático</p>
       <div class="toggle-switch">
-        <input
-          v-model="autoplay"
-          class="toggle-input"
-          id="toggle"
-          type="checkbox"
-        />
-        <label class="toggle-label" for="toggle"></label>
+        <input v-model="autoplay" class="toggle-input" id="toggle-auto-swiper" type="checkbox" />
+        <label class="toggle-label" for="toggle-auto-swiper"></label>
       </div>
     </div>
-    <div
-      class="md:border-4 border-2 rounded-xl border-primary-dark overflow-hidden relative"
-    >
-      <button
-        @click="previusPage"
-        class="h-full px-4 absolute z-20 top-0 left-0 flex justify-center items-center hover:bg-black/10 transition-all duration-300"
-      >
-        <ChevronLeft
-          class="size-10 md:size-16 text-white/80 drop-shadow-lg shadow-black"
-        />
+    <div class="shadow rounded-xl border-primary-dark overflow-hidden relative">
+      <button @click="previusPage"
+        class="h-full px-4 absolute z-20 top-0 left-0 flex justify-center items-center hover:bg-black/10 transition-all duration-300">
+        <ChevronLeft class="size-10 md:size-16 text-white/80 drop-shadow-lg shadow-black" />
       </button>
-      <button
-        @click="nextPage"
-        class="h-full px-4 absolute z-20 top-0 right-0 flex justify-center items-center hover:bg-black/10 transition-all duration-300"
-      >
-        <ChevronRight
-          class="size-10 md:size-16 text-white/80 drop-shadow-lg shadow-black"
-        />
+      <button @click="nextPage"
+        class="h-full px-4 absolute z-20 top-0 right-0 flex justify-center items-center hover:bg-black/10 transition-all duration-300">
+        <ChevronRight class="size-10 md:size-16 text-white/80 drop-shadow-lg shadow-black" />
       </button>
-      <div
-        id="slider-container"
-        ref="sliderContainer"
-        :style="`width : 100%; max-width: ${imageWidth}; overflow-x: hidden;`"
-        class="rounded-md"
-      >
-        <div
-          id="slider"
-          ref="slider"
-          :style="`width : 100%; max-width: ${
-            imageWidth * projects.length
-          }; transition: transform 0.5s ease; transform: translateX(-${
-            currentSlideIndex * rawImageWidth
-          }px);`"
-          class="flex cursor-pointer"
-        >
-          <img
-            @click="externalPush(image.link)"
-            :key="index"
-            v-for="(image, index) in projects"
-            :src="image.src"
-            :alt="image.alt"
-            :style="`object-fit: cover`"
-          />
+      <div id="slider-container" ref="sliderContainer"
+        :style="`width : 100%; max-width: ${imageWidth}; overflow-x: hidden;`" class="rounded-md">
+        <div id="slider" ref="slider" :style="`width : 100%; max-width: ${imageWidth * projects.length
+          }; transition: transform 0.5s ease; transform: translateX(-${currentSlideIndex * rawImageWidth
+          }px);`" class="flex cursor-pointer">
+          <img @click="externalPush(image.link)" :key="index" v-for="(image, index) in projects" :src="image.src"
+            :alt="image.alt" :style="`object-fit: cover`" />
         </div>
       </div>
     </div>
     <div class="gap-1 flex justify-center items-center">
-      <div
-        :key="index"
-        v-for="(_, index) in projects"
-        :class="`md:w-3 md:h-3 w-2.5 h-2.5 rounded-full ${
-          index === currentSlideIndex ? 'bg-primary' : ' bg-primary/25'
-        }`"
-      />
+      <div :key="index" v-for="(_, index) in projects" :class="`md:w-3 md:h-3 w-2.5 h-2.5 rounded-full ${index === currentSlideIndex ? 'bg-primary' : ' bg-secondary'
+        }`" />
     </div>
   </div>
 </template>

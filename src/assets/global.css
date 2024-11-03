@@ -60,9 +60,9 @@ section {
     font-size: 1.05rem;
   }
   main {
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 1.25rem 1.25rem 1.25rem;
   }
   footer {
-    padding: 0 1rem 2rem 1rem;
+    padding: 0 1.25rem 2rem 1.25rem;
   }
 }

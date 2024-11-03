@@ -38,7 +38,7 @@ onMounted(() => {
 
     <div class="flex flex-col gap-8 justify-center items-center">
       <img
-        class="w-80 aspect-square object-cover bg-secondary rounded-full rounded-bl-[40rem] shadow-md shadow-secondary/50"
+        class="w-80 aspect-square object-cover bg-main-smooth rounded-full rounded-bl-[40rem] shadow-md shadow-secondary/50"
         src="/herbert.png" alt="Foto de perfil de Herbert Duarte" />
 
       <button ref="button" @click="handleClick" class="relative px-4 py-2.5 flex justify-center">
@@ -47,7 +47,8 @@ onMounted(() => {
         <ChevronUpIcon v-show="showDropdown" class="inline ml-2 size-5" />
         <ChevronDownIcon v-show="!showDropdown" class="inline ml-2 size-5" />
 
-        <div v-if="showDropdown" class="bg-zinc-900 rounded-md p-1.5 flex flex-col items-stretch gap-1 mt-10 absolute">
+        <div v-if="showDropdown"
+          class="bg-main-smooth rounded-md p-1.5 flex flex-col items-stretch gap-1 mt-10 absolute">
           <a class="py-2 px-3 whitespace-nowrap text-left hover:text-primary transition-all duration-500"
             href="https://docs.google.com/document/d/1xD3qLXELNHdc2V1awa9_ZEwPjAd_cNeviG6fy68tXwU" target="_blank">
             <DownloadIcon class="inline mr-2 size-5" />

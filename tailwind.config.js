@@ -4,14 +4,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary-light': '#ff6c6c',
-        primary: '#a52121',
-        secondary: '#111111',
-        'primary-dark': '#360000',
-        main: '#080808',
-        'main-smooth': '#1f1f1f',
-        letter: '#dddddd',
-        'letter-smooth': '#969696',
+        'primary-light': 'var(--primary-light)',
+        primary: 'var(--primary)',
+        secondary: 'var(--secondary)',
+        'primary-dark': 'var(--primary-dark)',
+        main: 'var(--main)',
+        'main-smooth': 'var(--main-smooth)',
+        letter: 'var(--letter)',
+        'letter-smooth': 'var(--letter-smooth)',
+        'main-dark': 'var(--main-dark)',
       },
     },
   },
